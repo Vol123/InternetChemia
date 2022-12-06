@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(111, 145, 210);
+    box-sizing: border-box;
+    max-width: 700px;
+    margin: auto;
+}
+
+.lblMainText {
+    font-size: 32px;
+    color:rgb(71, 12, 101);
+}
+
+.GetTextBySymbol {
+    width: 300px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px 10px;
+    background-color: lavender;
+    border-radius: 15px;
+    border: 1px solid green;
+}
+
+.btnMain {
+    padding: 10px 32px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+
+.textOfResult {
+    text-decoration: solid;
+    white-space: wrap;
+    text-overflow: clip;
+    background-color: white;
+    padding: 30px 50px;
+    border: solid 3px red;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+    font-style: italic;
+    color:rgb(0, 21, 128);
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
