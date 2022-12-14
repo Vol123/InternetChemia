@@ -1,5 +1,4 @@
-class Element
-{
+class Element {
     symbol;
     number;
     numberofperiod;
@@ -13,12 +12,17 @@ class Element
     elUjemn;
 }
 
-class TableChemia
-{
+class TableChemia {
+    currentElement = -1;
     metal = "Metal";
     nemetal = "Nemetal";
-
     elements = [];
+    str = ["1s", "2s", "2p", "3s", "3p", "4s", "3d", "4p", "5s", "4d", "5p", "6s", "5d", "4f", "6p", "7s", "6d", "5f", "7p"];
+    numbers = [2, 2, 6, 2, 6, 2, 10, 6, 2, 10, 6, 2, 10, 14, 6, 2, 10, 14, 6];
+    Level = [1, 2, 2, 3, 3, 4, 3, 4, 5, 4, 5, 6, 5, 4, 6, 7, 6, 5, 7];
+    Numbers = [this.numbers.length];
+    Graphics = [];
+
     Init()
     {
         let element = new Element();
@@ -998,11 +1002,6 @@ class TableChemia
         this.elements.push(element);
     }
     
-    constructor()
-    {
-        this.Graphics = [7, 5];
-    }
-
     Valetnost()
     {
         this.elements[0].Valetnost = [2];
@@ -1453,57 +1452,14 @@ class TableChemia
         }
     }
 
-    str = ["1s", "2s", "2p", "3s", "3p", "4s", "3d", "4p", "5s", "4d", "5p", "6s", "5d", "4f", "6p", "7s", "6d", "5f", "7p"];
-    numbers = [2, 2, 6, 2, 6, 2, 10, 6, 2, 10, 6, 2, 10, 14, 6, 2, 10, 14, 6];
-    Level = [1, 2, 2, 3, 3, 4, 3, 4, 5, 4, 5, 6, 5, 4, 6, 7, 6, 5, 7];
-    Numbers = [this.numbers.length];
-    Graphics = [7, 5];
+    constructor()
+    {
+        this.Init();
+        this.PeriodANDgroupANDName();
+        this.Valetnost();
+        this.Graphics = [7, 5];
+    }
 
-    InitGraphics()
-    {
-        this.Graphics[0, 4] = 1;
-        this.Graphics[1, 4] = 2;
-        this.Graphics[2, 4] = 3;
-        this.Graphics[3, 4] = 4;
-        this.Graphics[4, 4] = 4;
-        this.Graphics[5, 4] = 3;
-        this.Graphics[6, 4] = 2;
-    }
-    InitNumbers(number)
-    {
-        this.InitGraphics();
-        let time = number;
-        let i = 0;
-        while(true)
-        {
-            if (i >= this.numbers.length)
-                break;
-            if (time >= this.numbers[i] && i < this.numbers.length)
-            {
-                time = time - this.numbers[i];
-                this.Numbers[i] = this.numbers[i];
-                i++;
-            }
-            else
-            {
-                this.Numbers[i] = time;
-                break;
-            }
-        }
-        
-        for (let k = 1; k <= 7; k++)
-        {
-            let j = 0;
-            for (let i = 0; i < this.Numbers.length; i++)
-            {
-                if (this.Level[i] == k)
-                {
-                    this.Graphics[k - 1, j] = this.Numbers[i];
-                    j++;
-                }
-            }
-        }
-    }
     SPDF(number)
     {
         let time = number;
@@ -1531,154 +1487,233 @@ class TableChemia
     }
 }
 
-let table = new TableChemia();
-table.Init();
-table.Valetnost();
-table.PeriodANDgroupANDName();
-
-function styleAnswer(Text) {
-    return "<span style=\"color: black; font-size: 25px; letter-spacing: 0px; word-spacing: 1px; font-weight: bold;\">" + Text + "</span>";
-}
-
-function getText(Text) {
-    let TextofResult = "";
-    for (let i = 0; i < table.elements.length; i++) {
-        if (table.elements[i].symbol.toString().toLowerCase() == Text.toString().toLowerCase() || 
-            table.elements[i].name.toString().toLowerCase() == Text.toString().toLowerCase()) {
-            TextofResult +=  "Symbol atomu: " + styleAnswer(table.elements[i].symbol) + "\n";
-            TextofResult += "Nazwa atomu: " + styleAnswer(table.elements[i].name) + "\n";
-            TextofResult += "Numer sekwencji: " + styleAnswer(table.elements[i].number) + "\n";
-            TextofResult += "Ar: " + styleAnswer(table.elements[i].Ar) + "\n";
-            if (table.elements[i].elUjemn != undefined)
-                TextofResult += "Liczba elektroujemności: " + styleAnswer(table.elements[i].elUjemn) + "\n";
-            else
-                TextofResult += "Liczba elektroujemności: " + " " + "\n";
-            TextofResult += "Metal/niemetal: " + styleAnswer(table.elements[i].metal) + "\n";
-            TextofResult += "Grupa: " + styleAnswer(table.elements[i].numberofgroup);
-            if (table.elements[i].group == "B")
-                TextofResult += styleAnswer(" B") + "\n";
-            else
-                TextofResult += styleAnswer(" A") + "\n";
-            TextofResult += "Okres: " + styleAnswer(table.elements[i].numberofperiod);
-
-            if (table.elements[i].period == "Small")
-                TextofResult += styleAnswer(", mały") + "\n";
-            else
-                TextofResult += styleAnswer(", duży") + "\n";
-
-            TextofResult += "Liczba elektronów: " + styleAnswer(table.elements[i].number) + "\n";
-            TextofResult += "Liczba protonów: " + styleAnswer(table.elements[i].number) + "\n";
-            TextofResult += "Liczba neutronów: " + styleAnswer((parseInt(table.elements[i].Ar) - table.elements[i].number)) + "\n";
-            TextofResult += "Wyższe tlenki: ";
-
-            if (table.elements[i].name != "Tlen")
-            {
-                TextofResult += styleAnswer(table.elements[i].symbol);
-                if (table.elements[i].numberofgroup == 1)
-                    TextofResult += styleAnswer("2O") + "\n";
-
-                if (table.elements[i].numberofgroup == 2)
-                    TextofResult += styleAnswer("O") + "\n";
-
-                if (table.elements[i].numberofgroup == 3)
-                    TextofResult += styleAnswer("2O<sub>3</sub>") + "\n";
-
-                if (table.elements[i].numberofgroup == 4)
-                    TextofResult += styleAnswer("O<sub>2</sub>") + "\n";
-
-                if (table.elements[i].numberofgroup == 5)
-                    TextofResult += styleAnswer("2O<sub>5</sub>") + "\n";
-
-                if (table.elements[i].numberofgroup == 6)
-                    TextofResult += styleAnswer("O<sub>3</sub>") + "\n";
-
-                if (table.elements[i].numberofgroup == 7)
-                    TextofResult += styleAnswer("2O<sub>7</sub>") + "\n";
-
-                if (table.elements[i].numberofgroup == 8)
-                    TextofResult += styleAnswer("O<sub>4</sub>") + "\n";
-
-                if (table.elements[i].numberofgroup == 8)
-                    TextofResult += "Lotne związki: " + "\n";
-            }
-            else
-            {
-                TextofResult += "\n";
-            }
-
-            if (table.elements[i].numberofgroup > 3)
-            {
-                if (table.elements[i].numberofgroup == 4)
-                {
-                    TextofResult += "Lotne związki: " + styleAnswer(table.elements[i].symbol);
-                    TextofResult += styleAnswer("H<sub>4</sub>") + "\n";
-                }
-                if (table.elements[i].numberofgroup == 5)
-                {
-                    TextofResult += "Lotne związki: " + styleAnswer(table.elements[i].symbol);
-                    TextofResult += styleAnswer("H<sub>3</sub>") + "\n";
-                }
-                if (table.elements[i].numberofgroup == 6)
-                {
-                    TextofResult += "Lotne związki: " + styleAnswer("H<sub>2</sub>");
-                    TextofResult += styleAnswer(table.elements[i].symbol) + "\n";
-                }
-                if (table.elements[i].numberofgroup == 7)
-                {
-                    TextofResult += "Lotne związki: " + styleAnswer("H");
-                    TextofResult += styleAnswer(table.elements[i].symbol) + "\n";
-                }
-            }
-            else
-                TextofResult += "Lotne związki: " + "\n";
-
-            let res = "";
-            res = table.SPDF(table.elements[i].number);
-            TextofResult += "Elektroniczna Konfiguracja:\n<span style=\"letter-spacing: 0px; word-spacing: 0px; color: black; font-weight: bold;\">" + res + "\n</span>";
-            TextofResult += "Wartościowość: ";
-            for (let j = 0; j < table.elements[i].Valetnost.length; j++) 
-                TextofResult += styleAnswer(table.elements[i].Valetnost[j]) + " ";
-            TextofResult += "\n";
-            TextofResult += "Graficzna konfiguracja:\n";
-            break;
-        }
+class Graphic {
+    constructor(images, table) {
+        this.images = images;
+        this.table = table;
     }
 
-    return TextofResult;
-}
-
-function writeText() {
-    document.getElementById("TextofResult").innerHTML = getText(document.getElementsByClassName("GetTextBySymbol")[0].value);
-}
-
-/*
-max = [1, 3, 5, 7];
-table.InitNumbers(table.elements[i].Number);
-
-let cell = 0;
-for (let i = 0; i < 7; i++)
-{
-    if (table.Graphics[i, 0] == 0)
-        break;
-
-    for (let j = 0; j < table.Graphics[i, 4]; j++)
+    InitGraphics()
     {
-        let temp = table.Graphics[i, j] / 2;
-        for (let k = 0; k < temp; k++)
-        {
-            pictures[cell].Image = Image.FromFile("Sounds/1.png");
-            cell++;
-        }
-        if (temp * 2 != table.Graphics[i, j])
-        {
-            pictures[cell].Image = Image.FromFile("Sounds/2.png");
-            cell -= (table.Graphics[i, j] + 1) / 2;
-            cell += max[j] + 1;
-            continue;
-        }
+        this.table.Graphics[0] = [];
+        this.table.Graphics[1] = [];
+        this.table.Graphics[2] = [];
+        this.table.Graphics[3] = [];
+        this.table.Graphics[4] = [];
+        this.table.Graphics[5] = [];
+        this.table.Graphics[6] = [];
+    }
 
-        cell -= temp;
-        cell += max[j];
+    InitNumbers(number)
+    {
+        this.InitGraphics();
+        let time = number;
+        let i = 0;
+        while(true)
+        {
+            if (i >= this.table.numbers.length)
+                break;
+            if (time >= this.table.numbers[i] && i < this.table.numbers.length)
+            {
+                time = time - this.table.numbers[i];
+                this.table.Numbers[i] = this.table.numbers[i];
+                i++;
+            }
+            else
+            {
+                this.table.Numbers[i] = time;
+                break;
+            }
+        }
+        
+        for (let k = 1; k <= 7; k++)
+        {
+            let j = 0;
+            for (let i = 0; i < this.table.Numbers.length; i++)
+            {
+                if (this.table.Level[i] == k)
+                {
+                    this.table.Graphics[k - 1][j] = this.table.Numbers[i];
+                    j++;
+                }
+            }
+        }
+    }
+
+    clearGraphic() {
+        try {
+            for (let i = 0 ; i < this.images.length; i++)
+                this.images[i].src = "Sounds/3.png";
+        }
+        catch {
+            return;
+        }
+    }
+    
+    drawGraphic() {
+        try {
+            if (this.table.currentElement == -1)
+                return;
+                
+            this.InitNumbers(this.table.elements[this.table.currentElement].number);
+            let cell = 0;
+
+            for (let i = 0; i < 7; i++) {
+                if (this.table.Graphics[i, 0] == 0)
+                    break;
+        
+                for (let j = 0; j < this.table.Graphics[i].length; j++) {
+                    let temp = parseInt(this.table.Graphics[i][j] / 2);
+                    for (let k = 0; k < temp; k++)
+                        this.images[cell++].src = "Sounds/1.png";
+
+                    if (temp * 2 !== this.table.Graphics[i][j])
+                        this.images[cell++].src = "Sounds/2.png";
+                }
+            }
+        }
+        catch {
+            return;
+        }
     }
 }
-*/
+
+class JobForTextChemia {
+    constructor(table, Text) {
+        this.table = table;
+        this.Text = Text;
+    }
+
+    styleAnswer(Text) {
+        return "<span style=\"color: black; font-size: 25px; letter-spacing: 0px; font-weight: bold;\">" + Text + "</span>";
+    }
+    
+    getText() {
+        let TextofResult = "";
+        for (let i = 0; i < this.table.elements.length; i++) {
+            if (this.table.elements[i].symbol.toString().toLowerCase() == this.Text.toString().toLowerCase() || 
+                this.table.elements[i].name.toString().toLowerCase() == this.Text.toString().toLowerCase()) {
+                this.table.currentElement = i;
+                TextofResult +=  "Symbol atomu: " + this.styleAnswer(this.table.elements[i].symbol) + "\n<br>";
+                TextofResult += "Nazwa atomu: " + this.styleAnswer(this.table.elements[i].name) + "\n<br>";
+                TextofResult += "Numer sekwencji: " + this.styleAnswer(this.table.elements[i].number) + "\n<br>";
+                TextofResult += "Ar: " + this.styleAnswer(this.table.elements[i].Ar) + "\n<br>";
+                if (this.table.elements[i].elUjemn != undefined)
+                    TextofResult += "Liczba elektroujemności: " + this.styleAnswer(this.table.elements[i].elUjemn) + "\n<br>";
+                else
+                    TextofResult += "Liczba elektroujemności: " + " " + "\n<br>";
+                TextofResult += "Metal/niemetal: " + this.styleAnswer(this.table.elements[i].metal) + "\n<br>";
+                TextofResult += "Grupa: " + this.styleAnswer(this.table.elements[i].numberofgroup);
+                if (this.table.elements[i].group == "B")
+                    TextofResult += this.styleAnswer(" B") + "\n<br>";
+                else
+                    TextofResult += this.styleAnswer(" A") + "\n<br>";
+                TextofResult += "Okres: " + this.styleAnswer(this.table.elements[i].numberofperiod);
+    
+                if (this.table.elements[i].period == "Small")
+                    TextofResult += this.styleAnswer(", mały") + "\n<br>";
+                else
+                    TextofResult += this.styleAnswer(", duży") + "\n<br>";
+    
+                TextofResult += "Liczba elektronów: " + this.styleAnswer(this.table.elements[i].number) + "\n<br>";
+                TextofResult += "Liczba protonów: " + this.styleAnswer(this.table.elements[i].number) + "\n<br>";
+                TextofResult += "Liczba neutronów: " + this.styleAnswer((parseInt(this.table.elements[i].Ar) - this.table.elements[i].number)) + "\n<br>";
+                TextofResult += "Wyższe tlenki: ";
+    
+                if (this.table.elements[i].name != "Tlen")
+                {
+                    TextofResult += this.styleAnswer(this.table.elements[i].symbol);
+                    if (this.table.elements[i].numberofgroup == 1)
+                        TextofResult += this.styleAnswer("2O") + "\n<br>";
+    
+                    if (this.table.elements[i].numberofgroup == 2)
+                        TextofResult += this.styleAnswer("O") + "\n<br>";
+    
+                    if (this.table.elements[i].numberofgroup == 3)
+                        TextofResult += this.styleAnswer("2O<sub>3</sub>") + "\n<br>";
+    
+                    if (this.table.elements[i].numberofgroup == 4)
+                        TextofResult += this.styleAnswer("O<sub>2</sub>") + "\n<br>";
+    
+                    if (this.table.elements[i].numberofgroup == 5)
+                        TextofResult += this.styleAnswer("2O<sub>5</sub>") + "\n<br>";
+    
+                    if (this.table.elements[i].numberofgroup == 6)
+                        TextofResult += this.styleAnswer("O<sub>3</sub>") + "\n<br>";
+    
+                    if (this.table.elements[i].numberofgroup == 7)
+                        TextofResult += this.styleAnswer("2O<sub>7</sub>") + "\n<br>";
+    
+                    if (this.table.elements[i].numberofgroup == 8)
+                        TextofResult += this.styleAnswer("O<sub>4</sub>") + "\n<br>";
+    
+                    if (this.table.elements[i].numberofgroup == 8)
+                        TextofResult += "Lotne związki: " + "\n<br>";
+                }
+                else
+                {
+                    TextofResult += "\n<br>";
+                }
+    
+                if (this.table.elements[i].numberofgroup > 3)
+                {
+                    if (this.table.elements[i].numberofgroup == 4)
+                    {
+                        TextofResult += "Lotne związki: " + this.styleAnswer(this.table.elements[i].symbol);
+                        TextofResult += this.styleAnswer("H<sub>4</sub>") + "\n<br>";
+                    }
+                    if (this.table.elements[i].numberofgroup == 5)
+                    {
+                        TextofResult += "Lotne związki: " + this.styleAnswer(this.table.elements[i].symbol);
+                        TextofResult += this.styleAnswer("H<sub>3</sub>") + "\n<br>";
+                    }
+                    if (this.table.elements[i].numberofgroup == 6)
+                    {
+                        TextofResult += "Lotne związki: " + this.styleAnswer("H<sub>2</sub>");
+                        TextofResult += this.styleAnswer(this.table.elements[i].symbol) + "\n<br>";
+                    }
+                    if (this.table.elements[i].numberofgroup == 7)
+                    {
+                        TextofResult += "Lotne związki: " + this.styleAnswer("H");
+                        TextofResult += this.styleAnswer(this.table.elements[i].symbol) + "\n<br>";
+                    }
+                }
+                else
+                    TextofResult += "Lotne związki: " + "\n<br>";
+    
+                let res = "";
+                res = this.table.SPDF(this.table.elements[i].number);
+                TextofResult += "Elektroniczna Konfiguracja:\n<span style=\"letter-spacing: 0px; word-spacing: 0px; color: black; font-weight: bold;\">" + res + "\n</span><br>";
+                TextofResult += "Wartościowość: ";
+                for (let j = 0; j < this.table.elements[i].Valetnost.length; j++) 
+                    TextofResult += this.styleAnswer(this.table.elements[i].Valetnost[j]) + " ";
+                TextofResult += "\n<br>";
+                TextofResult += "Graficzna konfiguracja:\n";
+                break;
+            }
+        }
+    
+        if (TextofResult != "")
+            return TextofResult;
+        else
+            return "<span class=\"notFound\">Nie znaleziono</span>";
+    }
+}
+
+function writeInformation() {
+    let table = new TableChemia();
+    let images = document.getElementsByClassName("graphicImg");
+    let jobText = new JobForTextChemia(table, document.getElementsByClassName("GetTextBySymbol")[0].value);
+    let Text = document.getElementById("TextofResult").innerHTML = jobText.getText();
+    if (Text == "<span class=\"notFound\">Nie znaleziono</span>") {
+        document.getElementById("graphicKonf").style.height = "0px";
+        document.getElementById("graphicKonf").style.visibility = "hidden";
+    }
+    else {
+        document.getElementById("graphicKonf").style.height = "500px";
+        document.getElementById("graphicKonf").style.visibility = "visible";
+        let graphic = new Graphic(images, table);
+        graphic.clearGraphic();
+        graphic.drawGraphic();
+    }
+}

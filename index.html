@@ -5,16 +5,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Test</title>
+    <link rel="shortcut icon" href="Icons/Logo.ico" type="image/x-icon">
+    <title>Słownik Chemia</title>
 </head>
 <body>
-    <form class="form">
-        <label for="choose" class="lblMainText">Napisz: </label>
-        <input id="choose" class="GetTextBySymbol">
-        <input type="button" class="btnMain" onclick="writeText()" value="Done"></input>
-    </form>
-    <br>
-    <pre class="textOfResult" id="TextofResult"></pre>
+    <header class="header">
+        <div class="logoFon">
+            <img class="chemiaLogoImg" src="Icons/Logo.ico" alt="Logo">
+            <div class="textLogo">CHEMIA</div>
+        </div>
+        <form class="form">
+            <label for="choose" class="lblMainText">Napisz: </label>
+            <div class="search">
+                <input id="choose" class="GetTextBySymbol">
+                <img class="searchImg" src="Icons/Search.svg" alt="Search">
+            </div>
+            <input type="button" class="btnMain" onclick="writeInformation()" value="Done"></input>
+        </form>
+    </header>
+    <main class="result">
+        <pre id="TextofResult"><span class="notFound">Nie znaleziono</span></pre>
+        <div class="graphicKonf" id="graphicKonf">
+            <div class="itemRow">
+                <div class="itemSymbol">K</div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+            </div>
+            <div class="itemRow">
+                <div class="itemSymbol">L</div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg" src="Sounds/3.png" alt="1">
+                    <img class="graphicImg" src="Sounds/3.png" alt="1">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+            </div>
+            <div class="itemRow">
+                <div class="itemSymbol">M</div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+            </div>
+            <div class="itemRow">
+                <div class="itemSymbol">N</div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+            </div>
+            <div class="itemRow">
+                <div class="itemSymbol">O</div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+            </div>
+            <div class="itemRow">
+                <div class="itemSymbol">P</div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+            </div>
+            <div class="itemRow">
+                <div class="itemSymbol">Q</div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+                <div class="itemGroupImg">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg"  src="Sounds/3.png" alt="1">
+                    <img class="graphicImg last" src="Sounds/3.png" alt="1">
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="TableChemia.js"></script>
 </body>
 </html>
