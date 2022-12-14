@@ -1,7 +1,7 @@
 class Element
 {
     symbol;
-    Number;
+    number;
     numberofperiod;
     numberofgroup;
     period;
@@ -24,7 +24,7 @@ class TableChemia
         let element = new Element();
         element.name = "Wodór";
         element.symbol = "H";
-        element.Number = 1;
+        element.number = 1;
         element.Ar = 1;
         element.numberofgroup = 1;
         element.numberofperiod = 1;
@@ -35,7 +35,7 @@ class TableChemia
         element = new Element();
         element.name = "Hel";
         element.symbol = "He";
-        element.Number = 2;
+        element.number = 2;
         element.Ar = 4;
         element.numberofgroup = 8;
         element.numberofperiod = 1;
@@ -46,7 +46,7 @@ class TableChemia
         element = new Element();
         element.name = "Lit";
         element.symbol = "Li";
-        element.Number = 3;
+        element.number = 3;
         element.Ar = 7;
         element.numberofgroup = 1;
         element.numberofperiod = 2;
@@ -57,7 +57,7 @@ class TableChemia
         element = new Element();
         element.name = "Beryl";
         element.symbol = "Be";
-        element.Number = 4;
+        element.number = 4;
         element.Ar = 9;
         element.numberofgroup = 2;
         element.numberofperiod = 2;
@@ -69,7 +69,7 @@ class TableChemia
         element = new Element();
         element.name = "Bor";
         element.symbol = "B";
-        element.Number = 5;
+        element.number = 5;
         element.Ar = 11;
         element.numberofgroup = 3;
         element.numberofperiod = 2;
@@ -80,7 +80,7 @@ class TableChemia
         element = new Element();
         element.name = "Więgiel";
         element.symbol = "C";
-        element.Number = 6;
+        element.number = 6;
         element.Ar = 12;
         element.numberofgroup = 4;
         element.numberofperiod = 2;
@@ -91,7 +91,7 @@ class TableChemia
         element = new Element();
         element.name = "Azot";
         element.symbol = "N";
-        element.Number = 7;
+        element.number = 7;
         element.Ar = 14;
         element.numberofgroup = 5;
         element.numberofperiod = 2;
@@ -102,7 +102,7 @@ class TableChemia
         element = new Element();
         element.name = "Tlen";
         element.symbol = "O";
-        element.Number = 8;
+        element.number = 8;
         element.Ar = 16;
         element.numberofgroup = 6;
         element.numberofperiod = 2;
@@ -113,7 +113,7 @@ class TableChemia
         element = new Element();
         element.name = "Fluor";
         element.symbol = "F";
-        element.Number = 9;
+        element.number = 9;
         element.Ar = 19;
         element.numberofgroup = 7;
         element.numberofperiod = 2;
@@ -124,7 +124,7 @@ class TableChemia
         element = new Element();
         element.name = "Neon";
         element.symbol = "Ne";
-        element.Number = 10;
+        element.number = 10;
         element.Ar = 20;
         element.numberofgroup = 8;
         element.numberofperiod = 2;
@@ -135,7 +135,7 @@ class TableChemia
         element = new Element();
         element.name = "Sód";
         element.symbol = "Na";
-        element.Number = 11;
+        element.number = 11;
         element.Ar = 23;
         element.numberofgroup = 1;
         element.numberofperiod = 3;
@@ -146,7 +146,7 @@ class TableChemia
         element = new Element();
         element.name = "Magnez";
         element.symbol = "Mg";
-        element.Number = 12;
+        element.number = 12;
         element.Ar = 24;
         element.numberofgroup = 2;
         element.numberofperiod = 3;
@@ -157,7 +157,7 @@ class TableChemia
         element = new Element();
         element.name = "Glin";
         element.symbol = "Al";
-        element.Number = 13;
+        element.number = 13;
         element.Ar = 27;
         element.numberofgroup = 3;
         element.numberofperiod = 3;
@@ -168,7 +168,7 @@ class TableChemia
         element = new Element();
         element.name = "Krzem";
         element.symbol = "Si";
-        element.Number = 14;
+        element.number = 14;
         element.Ar = 28;
         element.numberofgroup = 4;
         element.numberofperiod = 3;
@@ -179,7 +179,7 @@ class TableChemia
         element = new Element();
         element.name = "Fosfor";
         element.symbol = "P";
-        element.Number = 15;
+        element.number = 15;
         element.Ar = 31;
         element.numberofgroup = 5;
         element.numberofperiod = 3;
@@ -190,7 +190,7 @@ class TableChemia
         element = new Element();
         element.name = "Siarka";
         element.symbol = "S";
-        element.Number = 16;
+        element.number = 16;
         element.Ar = 32;
         element.numberofgroup = 6;
         element.numberofperiod = 3;
@@ -201,7 +201,7 @@ class TableChemia
         element = new Element();
         element.name = "Chlor";
         element.symbol = "Cl";
-        element.Number = 17;
+        element.number = 17;
         element.Ar = 35.5;
         element.numberofgroup = 7;
         element.numberofperiod = 3;
@@ -212,7 +212,7 @@ class TableChemia
         element = new Element();
         element.name = "Argon";
         element.symbol = "Ar";
-        element.Number = 18;
+        element.number = 18;
         element.Ar = 40;
         element.numberofgroup = 8;
         element.numberofperiod = 3;
@@ -223,7 +223,7 @@ class TableChemia
         element = new Element();
         element.name = "Potas";
         element.symbol = "K";
-        element.Number = 19;
+        element.number = 19;
         element.Ar = 39;
         element.numberofgroup = 1;
         element.numberofperiod = 4;
@@ -234,7 +234,7 @@ class TableChemia
         element = new Element();
         element.name = "Wapń";
         element.symbol = "Ca";
-        element.Number = 20;
+        element.number = 20;
         element.Ar = 40;
         element.numberofgroup = 2;
         element.numberofperiod = 4;
@@ -245,7 +245,7 @@ class TableChemia
         element = new Element();
         element.name = "Skand";
         element.symbol = "Sc";
-        element.Number = 21;
+        element.number = 21;
         element.Ar = 45;
         element.numberofgroup = 3;
         element.numberofperiod = 4;
@@ -256,7 +256,7 @@ class TableChemia
         element = new Element();
         element.name = "Tytan";
         element.symbol = "Ti";
-        element.Number = 22;
+        element.number = 22;
         element.Ar = 48;
         element.numberofgroup = 4;
         element.numberofperiod = 4;
@@ -267,7 +267,7 @@ class TableChemia
         element = new Element();
         element.name = "Wanad";
         element.symbol = "V";
-        element.Number = 23;
+        element.number = 23;
         element.Ar = 51;
         element.numberofgroup = 5;
         element.numberofperiod = 4;
@@ -278,7 +278,7 @@ class TableChemia
         element = new Element();
         element.name = "Chrom";
         element.symbol = "Cr";
-        element.Number = 24;
+        element.number = 24;
         element.Ar = 52;
         element.numberofgroup = 6;
         element.numberofperiod = 4;
@@ -289,7 +289,7 @@ class TableChemia
         element = new Element();
         element.name = "Mangan";
         element.symbol = "Mn";
-        element.Number = 25;
+        element.number = 25;
         element.Ar = 55;
         element.numberofgroup = 7;
         element.numberofperiod = 4;
@@ -300,7 +300,7 @@ class TableChemia
         element = new Element();
         element.name = "Żelazo";
         element.symbol = "Fe";
-        element.Number = 26;
+        element.number = 26;
         element.Ar = 56;
         element.numberofgroup = 8;
         element.numberofperiod = 4;
@@ -311,7 +311,7 @@ class TableChemia
         element = new Element();
         element.name = "Kobalt";
         element.symbol = "Co";
-        element.Number = 27;
+        element.number = 27;
         element.Ar = 59;
         element.numberofgroup = 8;
         element.numberofperiod = 4;
@@ -322,7 +322,7 @@ class TableChemia
         element = new Element();
         element.name = "Nikiel";
         element.symbol = "Ni";
-        element.Number = 28;
+        element.number = 28;
         element.Ar = 59;
         element.numberofgroup = 8;
         element.numberofperiod = 4;
@@ -333,7 +333,7 @@ class TableChemia
         element = new Element();
         element.name = "Miedz";
         element.symbol = "Cu";
-        element.Number = 29;
+        element.number = 29;
         element.Ar = 64;
         element.numberofgroup = 1;
         element.numberofperiod = 4;
@@ -344,7 +344,7 @@ class TableChemia
         element = new Element();
         element.name = "Cynk";
         element.symbol = "Zn";
-        element.Number = 30;
+        element.number = 30;
         element.Ar = 65;
         element.numberofgroup = 2;
         element.numberofperiod = 4;
@@ -355,7 +355,7 @@ class TableChemia
         element = new Element();
         element.name = "Gal";
         element.symbol = "Ga";
-        element.Number = 31;
+        element.number = 31;
         element.Ar = 70;
         element.numberofgroup = 3;
         element.numberofperiod = 4;
@@ -366,7 +366,7 @@ class TableChemia
         element = new Element();
         element.name = "German";
         element.symbol = "Ge";
-        element.Number = 32;
+        element.number = 32;
         element.Ar = 73;
         element.numberofgroup = 4;
         element.numberofperiod = 4;
@@ -377,7 +377,7 @@ class TableChemia
         element = new Element();
         element.name = "Arsen";
         element.symbol = "As";
-        element.Number = 33;
+        element.number = 33;
         element.Ar = 75;
         element.numberofgroup = 5;
         element.numberofperiod = 4;
@@ -388,7 +388,7 @@ class TableChemia
         element = new Element();
         element.name = "Selen";
         element.symbol = "Se";
-        element.Number = 34;
+        element.number = 34;
         element.Ar = 79;
         element.numberofgroup = 6;
         element.numberofperiod = 4;
@@ -399,7 +399,7 @@ class TableChemia
         element = new Element();
         element.name = "Brom";
         element.symbol = "Br";
-        element.Number = 35;
+        element.number = 35;
         element.Ar = 80;
         element.numberofgroup = 7;
         element.numberofperiod = 4;
@@ -410,7 +410,7 @@ class TableChemia
         element = new Element();
         element.name = "Krypton";
         element.symbol = "Kr";
-        element.Number = 36;
+        element.number = 36;
         element.Ar = 84;
         element.numberofgroup = 8;
         element.numberofperiod = 4;
@@ -421,7 +421,7 @@ class TableChemia
         element = new Element();
         element.name = "Rubid";
         element.symbol = "Rb";
-        element.Number = 37;
+        element.number = 37;
         element.Ar = 85;
         element.numberofgroup = 1;
         element.numberofperiod = 5;
@@ -432,7 +432,7 @@ class TableChemia
         element = new Element();
         element.name = "Stront";
         element.symbol = "Sr";
-        element.Number = 38;
+        element.number = 38;
         element.Ar = 88;
         element.numberofgroup = 2;
         element.numberofperiod = 5;
@@ -443,7 +443,7 @@ class TableChemia
         element = new Element();
         element.name = "Itr";
         element.symbol = "Y";
-        element.Number = 39;
+        element.number = 39;
         element.Ar = 89;
         element.numberofgroup = 3;
         element.numberofperiod = 5;
@@ -454,7 +454,7 @@ class TableChemia
         element = new Element();
         element.name = "Cyrkon";
         element.symbol = "Zr";
-        element.Number = 40;
+        element.number = 40;
         element.Ar = 91;
         element.numberofgroup = 4;
         element.numberofperiod = 5;
@@ -465,7 +465,7 @@ class TableChemia
         element = new Element();
         element.name = "Niob";
         element.symbol = "Nb";
-        element.Number = 41;
+        element.number = 41;
         element.Ar = 93;
         element.numberofgroup = 5;
         element.numberofperiod = 5;
@@ -476,7 +476,7 @@ class TableChemia
         element = new Element();
         element.name = "Molibden";
         element.symbol = "Mo";
-        element.Number = 42;
+        element.number = 42;
         element.Ar = 96;
         element.numberofgroup = 6;
         element.numberofperiod = 5;
@@ -487,7 +487,7 @@ class TableChemia
         element = new Element();
         element.name = "Technet";
         element.symbol = "Tc";
-        element.Number = 43;
+        element.number = 43;
         element.Ar = 98;
         element.numberofgroup = 7;
         element.numberofperiod = 5;
@@ -498,7 +498,7 @@ class TableChemia
         element = new Element();
         element.name = "Ruten";
         element.symbol = "Ru";
-        element.Number = 44;
+        element.number = 44;
         element.Ar = 101;
         element.numberofgroup = 8;
         element.numberofperiod = 5;
@@ -509,7 +509,7 @@ class TableChemia
         element = new Element();
         element.name = "Rod";
         element.symbol = "Rh";
-        element.Number = 45;
+        element.number = 45;
         element.Ar = 103;
         element.numberofgroup = 8;
         element.numberofperiod = 5;
@@ -520,7 +520,7 @@ class TableChemia
         element = new Element();
         element.name = "Pallad";
         element.symbol = "Pd";
-        element.Number = 46;
+        element.number = 46;
         element.Ar = 107;
         element.numberofgroup = 8;
         element.numberofperiod = 5;
@@ -531,7 +531,7 @@ class TableChemia
         element = new Element();
         element.name = "Srebro";
         element.symbol = "Ag";
-        element.Number = 47;
+        element.number = 47;
         element.Ar = 108;
         element.numberofgroup = 1;
         element.numberofperiod = 5;
@@ -542,7 +542,7 @@ class TableChemia
         element = new Element();
         element.name = "Kadm";
         element.symbol = "Cd";
-        element.Number = 48;
+        element.number = 48;
         element.Ar = 112;
         element.numberofgroup = 2;
         element.numberofperiod = 5;
@@ -553,7 +553,7 @@ class TableChemia
         element = new Element();
         element.name = "Ind";
         element.symbol = "In";
-        element.Number = 49;
+        element.number = 49;
         element.Ar = 115;
         element.numberofgroup = 3;
         element.numberofperiod = 5;
@@ -564,7 +564,7 @@ class TableChemia
         element = new Element();
         element.name = "Cyna";
         element.symbol = "Sn";
-        element.Number = 50;
+        element.number = 50;
         element.Ar = 119;
         element.numberofgroup = 4;
         element.numberofperiod = 5;
@@ -575,7 +575,7 @@ class TableChemia
         element = new Element();
         element.name = "Antymon";
         element.symbol = "Sb";
-        element.Number = 51;
+        element.number = 51;
         element.Ar = 122;
         element.numberofgroup = 5;
         element.numberofperiod = 5;
@@ -586,7 +586,7 @@ class TableChemia
         element = new Element();
         element.name = "Tellur";
         element.symbol = "Te";
-        element.Number = 52;
+        element.number = 52;
         element.Ar = 128;
         element.numberofgroup = 6;
         element.numberofperiod = 5;
@@ -597,7 +597,7 @@ class TableChemia
         element = new Element();
         element.name = "Jod";
         element.symbol = "I";
-        element.Number = 53;
+        element.number = 53;
         element.Ar = 127;
         element.numberofgroup = 7;
         element.numberofperiod = 5;
@@ -608,7 +608,7 @@ class TableChemia
         element = new Element();
         element.name = "Ksenon";
         element.symbol = "Xe";
-        element.Number = 54;
+        element.number = 54;
         element.Ar = 131;
         element.numberofgroup = 8;
         element.numberofperiod = 5;
@@ -619,7 +619,7 @@ class TableChemia
         element = new Element();
         element.name = "Cez";
         element.symbol = "Cs";
-        element.Number = 55;
+        element.number = 55;
         element.Ar = 133;
         element.numberofgroup = 1;
         element.numberofperiod = 6;
@@ -630,7 +630,7 @@ class TableChemia
         element = new Element();
         element.name = "Bar";
         element.symbol = "Ba";
-        element.Number = 56;
+        element.number = 56;
         element.Ar = 137;
         element.numberofgroup = 2;
         element.numberofperiod = 6;
@@ -641,7 +641,7 @@ class TableChemia
         element = new Element();
         element.name = "Lantan";
         element.symbol = "La";
-        element.Number = 57;
+        element.number = 57;
         element.Ar = 139;
         element.numberofgroup = 3;
         element.numberofperiod = 6;
@@ -652,7 +652,7 @@ class TableChemia
         element = new Element();
         element.name = "Hafn";
         element.symbol = "Hf";
-        element.Number = 72;
+        element.number = 72;
         element.Ar = 178;
         element.numberofgroup = 4;
         element.numberofperiod = 6;
@@ -663,7 +663,7 @@ class TableChemia
         element = new Element();
         element.name = "Tantal";
         element.symbol = "Ta";
-        element.Number = 73;
+        element.number = 73;
         element.Ar = 181;
         element.numberofgroup = 5;
         element.numberofperiod = 6;
@@ -674,7 +674,7 @@ class TableChemia
         element = new Element();
         element.name = "Wolfram";
         element.symbol = "W";
-        element.Number = 74;
+        element.number = 74;
         element.Ar = 184;
         element.numberofgroup = 6;
         element.numberofperiod = 6;
@@ -685,7 +685,7 @@ class TableChemia
         element = new Element();
         element.name = "Ren";
         element.symbol = "Re";
-        element.Number = 75;
+        element.number = 75;
         element.Ar = 186;
         element.numberofgroup = 7;
         element.numberofperiod = 6;
@@ -696,7 +696,7 @@ class TableChemia
         element = new Element();
         element.name = "Osm";
         element.symbol = "Os";
-        element.Number = 76;
+        element.number = 76;
         element.Ar = 190;
         element.numberofgroup = 8;
         element.numberofperiod = 6;
@@ -707,7 +707,7 @@ class TableChemia
         element = new Element();
         element.name = "Iryd";
         element.symbol = "Ir";
-        element.Number = 77;
+        element.number = 77;
         element.Ar = 192;
         element.numberofgroup = 8;
         element.numberofperiod = 6;
@@ -718,7 +718,7 @@ class TableChemia
         element = new Element();
         element.name = "Platyna";
         element.symbol = "Pt";
-        element.Number = 78;
+        element.number = 78;
         element.Ar = 195;
         element.numberofgroup = 8;
         element.numberofperiod = 6;
@@ -729,7 +729,7 @@ class TableChemia
         element = new Element();
         element.name = "Złoto";
         element.symbol = "Au";
-        element.Number = 79;
+        element.number = 79;
         element.Ar = 197;
         element.numberofgroup = 1;
         element.numberofperiod = 6;
@@ -740,7 +740,7 @@ class TableChemia
         element = new Element();
         element.name = "Rtęć";
         element.symbol = "Hg";
-        element.Number = 80;
+        element.number = 80;
         element.Ar = 201;
         element.numberofgroup = 2;
         element.numberofperiod = 6;
@@ -751,7 +751,7 @@ class TableChemia
         element = new Element();
         element.name = "Tal";
         element.symbol = "Tl";
-        element.Number = 81;
+        element.number = 81;
         element.Ar = 204;
         element.numberofgroup = 3;
         element.numberofperiod = 6;
@@ -762,7 +762,7 @@ class TableChemia
         element = new Element();
         element.name = "Ołów";
         element.symbol = "Pb";
-        element.Number = 82;
+        element.number = 82;
         element.Ar = 207;
         element.numberofgroup = 4;
         element.numberofperiod = 6;
@@ -773,7 +773,7 @@ class TableChemia
         element = new Element();
         element.name = "Bizmut";
         element.symbol = "Bi";
-        element.Number = 83;
+        element.number = 83;
         element.Ar = 209;
         element.numberofgroup = 5;
         element.numberofperiod = 6;
@@ -784,7 +784,7 @@ class TableChemia
         element = new Element();
         element.name = "Polon";
         element.symbol = "Po";
-        element.Number = 84;
+        element.number = 84;
         element.Ar = 209;
         element.numberofgroup = 6;
         element.numberofperiod = 6;
@@ -795,7 +795,7 @@ class TableChemia
         element = new Element();
         element.name = "Astat";
         element.symbol = "At";
-        element.Number = 85;
+        element.number = 85;
         element.Ar = 210;
         element.numberofgroup = 7;
         element.numberofperiod = 6;
@@ -806,7 +806,7 @@ class TableChemia
         element = new Element();
         element.name = "Radom";
         element.symbol = "Rn";
-        element.Number = 86;
+        element.number = 86;
         element.Ar = 222;
         element.numberofgroup = 8;
         element.numberofperiod = 6;
@@ -817,7 +817,7 @@ class TableChemia
         element = new Element();
         element.name = "Frans";
         element.symbol = "Fr";
-        element.Number = 87;
+        element.number = 87;
         element.Ar = 223;
         element.numberofgroup = 1;
         element.numberofperiod = 7;
@@ -828,7 +828,7 @@ class TableChemia
         element = new Element();
         element.name = "Rad";
         element.symbol = "Ra";
-        element.Number = 88;
+        element.number = 88;
         element.Ar = 226;
         element.numberofgroup = 2;
         element.numberofperiod = 7;
@@ -839,7 +839,7 @@ class TableChemia
         element = new Element();
         element.name = "Aktyn";
         element.symbol = "Ac";
-        element.Number = 89;
+        element.number = 89;
         element.Ar = 227;
         element.numberofgroup = 3;
         element.numberofperiod = 7;
@@ -850,7 +850,7 @@ class TableChemia
         element = new Element();
         element.name = "Rutherford";
         element.symbol = "Rf";
-        element.Number = 104;
+        element.number = 104;
         element.Ar = 267;
         element.numberofgroup = 4;
         element.numberofperiod = 7;
@@ -860,7 +860,7 @@ class TableChemia
         element = new Element();
         element.name = "Dubn";
         element.symbol = "Db";
-        element.Number = 105;
+        element.number = 105;
         element.Ar = 270;
         element.numberofgroup = 5;
         element.numberofperiod = 7;
@@ -870,7 +870,7 @@ class TableChemia
         element = new Element();
         element.name = "Seaborg";
         element.symbol = "Sg";
-        element.Number = 106;
+        element.number = 106;
         element.Ar = 270;
         element.numberofgroup = 6;
         element.numberofperiod = 7;
@@ -880,7 +880,7 @@ class TableChemia
         element = new Element();
         element.name = "Bohr";
         element.symbol = "Bh";
-        element.Number = 107;
+        element.number = 107;
         element.Ar = 270;
         element.numberofgroup = 7;
         element.numberofperiod = 7;
@@ -890,7 +890,7 @@ class TableChemia
         element = new Element();
         element.name = "Has";
         element.symbol = "Hs";
-        element.Number = 108;
+        element.number = 108;
         element.Ar = 270;
         element.numberofgroup = 8;
         element.numberofperiod = 7;
@@ -900,7 +900,7 @@ class TableChemia
         element = new Element();
         element.name = "Meitner";
         element.symbol = "Mt";
-        element.Number = 109;
+        element.number = 109;
         element.Ar = 278;
         element.numberofgroup = 8;
         element.numberofperiod = 7;
@@ -910,7 +910,7 @@ class TableChemia
         element = new Element();
         element.name = "Darmsztadt";
         element.symbol = "Ds";
-        element.Number = 110;
+        element.number = 110;
         element.Ar = 281;
         element.numberofgroup = 8;
         element.numberofperiod = 7;
@@ -920,7 +920,7 @@ class TableChemia
         element = new Element();
         element.name = "Rpentgen";
         element.symbol = "Rg";
-        element.Number = 111;
+        element.number = 111;
         element.Ar = 281;
         element.numberofgroup = 1;
         element.numberofperiod = 7;
@@ -930,7 +930,7 @@ class TableChemia
         element = new Element();
         element.name = "Kopernik";
         element.symbol = "Cn";
-        element.Number = 112;
+        element.number = 112;
         element.Ar = 285;
         element.numberofgroup = 2;
         element.numberofperiod = 7;
@@ -940,7 +940,7 @@ class TableChemia
         element = new Element();
         element.name = "Nihonium";
         element.symbol = "Nh";
-        element.Number = 113;
+        element.number = 113;
         element.Ar = 286;
         element.numberofgroup = 3;
         element.numberofperiod = 7;
@@ -950,7 +950,7 @@ class TableChemia
         element = new Element();
         element.name = "Flerovium";
         element.symbol = "Fl";
-        element.Number = 114;
+        element.number = 114;
         element.Ar = 289;
         element.numberofgroup = 4;
         element.numberofperiod = 7;
@@ -960,7 +960,7 @@ class TableChemia
         element = new Element();
         element.name = "Moscovium";
         element.symbol = "Mc";
-        element.Number = 115;
+        element.number = 115;
         element.Ar = 288;
         element.numberofgroup = 5;
         element.numberofperiod = 7;
@@ -970,7 +970,7 @@ class TableChemia
         element = new Element();
         element.name = "Livermorium";
         element.symbol = "Lv";
-        element.Number = 116;
+        element.number = 116;
         element.Ar = 293;
         element.numberofgroup = 6;
         element.numberofperiod = 7;
@@ -980,7 +980,7 @@ class TableChemia
         element = new Element();
         element.name = "Tennessine";
         element.symbol = "Ts";
-        element.Number = 117;
+        element.number = 117;
         element.Ar = 293;
         element.numberofgroup = 7;
         element.numberofperiod = 7;
@@ -990,7 +990,7 @@ class TableChemia
         element = new Element();
         element.name = "Oganesson";
         element.symbol = "Og";
-        element.Number = 118;
+        element.number = 118;
         element.Ar = 294;
         element.numberofgroup = 8;
         element.numberofperiod = 7;
@@ -1469,10 +1469,10 @@ class TableChemia
         this.Graphics[5, 4] = 3;
         this.Graphics[6, 4] = 2;
     }
-    InitNumbers(Number)
+    InitNumbers(number)
     {
         this.InitGraphics();
-        let time = Number;
+        let time = number;
         let i = 0;
         while(true)
         {
@@ -1504,9 +1504,9 @@ class TableChemia
             }
         }
     }
-    SPDF(Number)
+    SPDF(number)
     {
-        let time = Number;
+        let time = number;
         let res = "";
         let i = 0;
 
@@ -1547,7 +1547,7 @@ function getText(Text) {
             table.elements[i].name.toString().toLowerCase() == Text.toString().toLowerCase()) {
             TextofResult +=  "Symbol atomu: " + styleAnswer(table.elements[i].symbol) + "\n";
             TextofResult += "Nazwa atomu: " + styleAnswer(table.elements[i].name) + "\n";
-            TextofResult += "Numer sekwencji: " + styleAnswer(table.elements[i].Number) + "\n";
+            TextofResult += "Numer sekwencji: " + styleAnswer(table.elements[i].number) + "\n";
             TextofResult += "Ar: " + styleAnswer(table.elements[i].Ar) + "\n";
             if (table.elements[i].elUjemn != undefined)
                 TextofResult += "Liczba elektroujemności: " + styleAnswer(table.elements[i].elUjemn) + "\n";
@@ -1556,9 +1556,9 @@ function getText(Text) {
             TextofResult += "Metal/niemetal: " + styleAnswer(table.elements[i].metal) + "\n";
             TextofResult += "Grupa: " + styleAnswer(table.elements[i].numberofgroup);
             if (table.elements[i].group == "B")
-                TextofResult += styleAnswer("B") + "\n";
+                TextofResult += styleAnswer(" B") + "\n";
             else
-                TextofResult += styleAnswer("A") + "\n";
+                TextofResult += styleAnswer(" A") + "\n";
             TextofResult += "Okres: " + styleAnswer(table.elements[i].numberofperiod);
 
             if (table.elements[i].period == "Small")
@@ -1566,9 +1566,9 @@ function getText(Text) {
             else
                 TextofResult += styleAnswer(", duży") + "\n";
 
-            TextofResult += "Liczba elektronów: " + styleAnswer(table.elements[i].Number) + "\n";
-            TextofResult += "Liczba protonów: " + styleAnswer(table.elements[i].Number) + "\n";
-            TextofResult += "Liczba neutronów: " + styleAnswer((parseInt(table.elements[i].Ar) - table.elements[i].Number)) + "\n";
+            TextofResult += "Liczba elektronów: " + styleAnswer(table.elements[i].number) + "\n";
+            TextofResult += "Liczba protonów: " + styleAnswer(table.elements[i].number) + "\n";
+            TextofResult += "Liczba neutronów: " + styleAnswer((parseInt(table.elements[i].Ar) - table.elements[i].number)) + "\n";
             TextofResult += "Wyższe tlenki: ";
 
             if (table.elements[i].name != "Tlen")
@@ -1633,18 +1633,52 @@ function getText(Text) {
                 TextofResult += "Lotne związki: " + "\n";
 
             let res = "";
-            res = table.SPDF(table.elements[i].Number);
-            TextofResult += "Elektroniczna Konfiguracja:\n<span style=\"font-size: 16px; letter-spacing: 0px; word-spacing: 0px; color: black; font-weight: bold;\">" + res + "\n</span>";
+            res = table.SPDF(table.elements[i].number);
+            TextofResult += "Elektroniczna Konfiguracja:\n<span style=\"letter-spacing: 0px; word-spacing: 0px; color: black; font-weight: bold;\">" + res + "\n</span>";
             TextofResult += "Wartościowość: ";
             for (let j = 0; j < table.elements[i].Valetnost.length; j++) 
                 TextofResult += styleAnswer(table.elements[i].Valetnost[j]) + " ";
             TextofResult += "\n";
+            TextofResult += "Graficzna konfiguracja:\n";
             break;
         }
     }
+
     return TextofResult;
 }
 
-function writeText(etem) {
+function writeText() {
     document.getElementById("TextofResult").innerHTML = getText(document.getElementsByClassName("GetTextBySymbol")[0].value);
 }
+
+/*
+max = [1, 3, 5, 7];
+table.InitNumbers(table.elements[i].Number);
+
+let cell = 0;
+for (let i = 0; i < 7; i++)
+{
+    if (table.Graphics[i, 0] == 0)
+        break;
+
+    for (let j = 0; j < table.Graphics[i, 4]; j++)
+    {
+        let temp = table.Graphics[i, j] / 2;
+        for (let k = 0; k < temp; k++)
+        {
+            pictures[cell].Image = Image.FromFile("Sounds/1.png");
+            cell++;
+        }
+        if (temp * 2 != table.Graphics[i, j])
+        {
+            pictures[cell].Image = Image.FromFile("Sounds/2.png");
+            cell -= (table.Graphics[i, j] + 1) / 2;
+            cell += max[j] + 1;
+            continue;
+        }
+
+        cell -= temp;
+        cell += max[j];
+    }
+}
+*/
