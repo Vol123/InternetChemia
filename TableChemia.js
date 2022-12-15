@@ -1557,11 +1557,13 @@ class Graphic {
                 
             this.InitNumbers(this.table.elements[this.table.currentElement].number);
             let cell = 0;
+            let lines = [0, 1, 5, 14, 30, 46, 55];
 
             for (let i = 0; i < 7; i++) {
                 if (this.table.Graphics[i, 0] == 0)
                     break;
         
+                cell = lines[i];
                 for (let j = 0; j < this.table.Graphics[i].length; j++) {
                     let temp = parseInt(this.table.Graphics[i][j] / 2);
                     for (let k = 0; k < temp; k++)
@@ -1578,140 +1580,159 @@ class Graphic {
     }
 }
 
-class JobForTextChemia {
-    constructor(table, Text) {
-        this.table = table;
-        this.Text = Text;
-    }
-
+class MyStyles {
     styleAnswer(Text) {
         return "<span style=\"color: black; font-size: 25px; letter-spacing: 0px; font-weight: bold;\">" + Text + "</span>";
     }
-    
-    getText() {
-        let TextofResult = "";
+
+    styleAnswerBr(Text) {
+        return this.styleAnswer(Text) + this.br();
+    }
+
+    styleHeaderText(Text) {
+        return "<span class=\"mainHTextResult\">" + Text + "</span>";
+    }
+
+    styleRes(res) {
+        return "<span style=\"letter-spacing: 0px; word-spacing: 0px; color: black; font-weight: bold;\">" + res + "</span>"
+    }
+
+    styleNotFound(Text) {
+        return "<span class=\"notFound\">" + Text + "</span>";
+    }
+
+    br() {
+        return "\n<br>";
+    }
+
+    twoBr() {
+        return this.br() + this.br();
+    }
+}
+
+class ResultTableChemia {
+    constructor(table, Text, Styles) {
+        this.table = table;
+        this.Text = Text;
+        this.Styles = Styles;
+        this.ResultText = "";
+    }
+
+    mainFunction() {
         for (let i = 0; i < this.table.elements.length; i++) {
             if (this.table.elements[i].symbol.toString().toLowerCase() == this.Text.toString().toLowerCase() || 
                 this.table.elements[i].name.toString().toLowerCase() == this.Text.toString().toLowerCase()) {
                 this.table.currentElement = i;
-                TextofResult +=  "Symbol atomu: " + this.styleAnswer(this.table.elements[i].symbol) + "\n<br>";
-                TextofResult += "Nazwa atomu: " + this.styleAnswer(this.table.elements[i].name) + "\n<br>";
-                TextofResult += "Numer sekwencji: " + this.styleAnswer(this.table.elements[i].number) + "\n<br>";
-                TextofResult += "Ar: " + this.styleAnswer(this.table.elements[i].Ar) + "\n<br>";
+                this.ResultText += this.Styles.styleHeaderText("Cechy Pierwiastka\n</span><br>");
+                this.ResultText +=  "Symbol atomu: " + this.Styles.styleAnswerBr(this.table.elements[i].symbol);
+                this.ResultText += "Nazwa atomu: " + this.Styles.styleAnswerBr(this.table.elements[i].name);
+                this.ResultText += "Numer sekwencji: " + this.Styles.styleAnswerBr(this.table.elements[i].number);
+                this.ResultText += "Ar: " + this.Styles.styleAnswerBr(this.table.elements[i].Ar);
                 if (this.table.elements[i].elUjemn != undefined)
-                    TextofResult += "Liczba elektroujemności: " + this.styleAnswer(this.table.elements[i].elUjemn) + "\n<br>";
+                    this.ResultText += "Liczba elektroujemności: " + this.Styles.styleAnswerBr(this.table.elements[i].elUjemn);
                 else
-                    TextofResult += "Liczba elektroujemności: " + " " + "\n<br>";
-                TextofResult += "Metal/niemetal: " + this.styleAnswer(this.table.elements[i].metal) + "\n<br>";
-                TextofResult += "Grupa: " + this.styleAnswer(this.table.elements[i].numberofgroup);
+                    this.ResultText += "Liczba elektroujemności: " + " " + this.Styles.br();
+                this.ResultText += "Metal/niemetal: " + this.Styles.styleAnswerBr(this.table.elements[i].metal);
+                this.ResultText += "Grupa: " + this.Styles.styleAnswer(this.table.elements[i].numberofgroup);
                 if (this.table.elements[i].group == "B")
-                    TextofResult += this.styleAnswer(" B") + "\n<br>";
+                    this.ResultText += this.Styles.styleAnswerBr(" B");
                 else
-                    TextofResult += this.styleAnswer(" A") + "\n<br>";
-                TextofResult += "Okres: " + this.styleAnswer(this.table.elements[i].numberofperiod);
+                    this.ResultText += this.Styles.styleAnswerBr(" A");
+                this.ResultText += "Okres: " + this.Styles.styleAnswer(this.table.elements[i].numberofperiod);
     
                 if (this.table.elements[i].period == "Small")
-                    TextofResult += this.styleAnswer(", mały") + "\n<br>";
+                    this.ResultText += this.Styles.styleAnswerBr(", mały");
                 else
-                    TextofResult += this.styleAnswer(", duży") + "\n<br>";
+                    this.ResultText += this.Styles.styleAnswerBr(", duży");
     
-                TextofResult += "Liczba elektronów: " + this.styleAnswer(this.table.elements[i].number) + "\n<br>";
-                TextofResult += "Liczba protonów: " + this.styleAnswer(this.table.elements[i].number) + "\n<br>";
-                TextofResult += "Liczba neutronów: " + this.styleAnswer((parseInt(this.table.elements[i].Ar) - this.table.elements[i].number)) + "\n<br>";
-                TextofResult += "Wyższe tlenki: ";
+                this.ResultText += "Liczba elektronów: " + this.Styles.styleAnswerBr(this.table.elements[i].number);
+                this.ResultText += "Liczba protonów: " + this.Styles.styleAnswerBr(this.table.elements[i].number);
+                this.ResultText += "Liczba neutronów: " + this.Styles.styleAnswerBr((parseInt(this.table.elements[i].Ar) - this.table.elements[i].number));
+                this.ResultText += "Wyższe tlenki: ";
     
                 if (this.table.elements[i].name != "Tlen")
                 {
-                    TextofResult += this.styleAnswer(this.table.elements[i].symbol);
+                    this.ResultText += this.Styles.styleAnswer(this.table.elements[i].symbol);
                     if (this.table.elements[i].numberofgroup == 1)
-                        TextofResult += this.styleAnswer("2O") + "\n<br>";
-    
+                        this.ResultText += this.Styles.styleAnswerBr("2O");
                     if (this.table.elements[i].numberofgroup == 2)
-                        TextofResult += this.styleAnswer("O") + "\n<br>";
-    
+                        this.ResultText += this.Styles.styleAnswerBr("O");
                     if (this.table.elements[i].numberofgroup == 3)
-                        TextofResult += this.styleAnswer("2O<sub>3</sub>") + "\n<br>";
-    
+                        this.ResultText += this.Styles.styleAnswerBr("2O<sub>3</sub>");
                     if (this.table.elements[i].numberofgroup == 4)
-                        TextofResult += this.styleAnswer("O<sub>2</sub>") + "\n<br>";
-    
+                        this.ResultText += this.Styles.styleAnswerBr("O<sub>2</sub>");
                     if (this.table.elements[i].numberofgroup == 5)
-                        TextofResult += this.styleAnswer("2O<sub>5</sub>") + "\n<br>";
-    
+                        this.ResultText += this.Styles.styleAnswerBr("2O<sub>5</sub>");
                     if (this.table.elements[i].numberofgroup == 6)
-                        TextofResult += this.styleAnswer("O<sub>3</sub>") + "\n<br>";
-    
+                        this.ResultText += this.Styles.styleAnswerBr("O<sub>3</sub>");
                     if (this.table.elements[i].numberofgroup == 7)
-                        TextofResult += this.styleAnswer("2O<sub>7</sub>") + "\n<br>";
-    
+                        this.ResultText += this.Styles.styleAnswerBr("2O<sub>7</sub>");
                     if (this.table.elements[i].numberofgroup == 8)
-                        TextofResult += this.styleAnswer("O<sub>4</sub>") + "\n<br>";
-    
+                        this.ResultText += this.Styles.styleAnswerBr("O<sub>4</sub>");
                     if (this.table.elements[i].numberofgroup == 8)
-                        TextofResult += "Lotne związki: " + "\n<br>";
+                        this.ResultText += "Lotne związki: " + this.Styles.br();
                 }
                 else
-                {
-                    TextofResult += "\n<br>";
-                }
+                    this.ResultText += this.Styles.br();
     
                 if (this.table.elements[i].numberofgroup > 3)
                 {
                     if (this.table.elements[i].numberofgroup == 4)
                     {
-                        TextofResult += "Lotne związki: " + this.styleAnswer(this.table.elements[i].symbol);
-                        TextofResult += this.styleAnswer("H<sub>4</sub>") + "\n<br>";
+                        this.ResultText += "Lotne związki: " + this.Styles.styleAnswer(this.table.elements[i].symbol);
+                        this.ResultText += this.Styles.styleAnswerBr("H<sub>4</sub>");
                     }
                     if (this.table.elements[i].numberofgroup == 5)
                     {
-                        TextofResult += "Lotne związki: " + this.styleAnswer(this.table.elements[i].symbol);
-                        TextofResult += this.styleAnswer("H<sub>3</sub>") + "\n<br>";
+                        this.ResultText += "Lotne związki: " + this.Styles.styleAnswer(this.table.elements[i].symbol);
+                        this.ResultText += this.Styles.styleAnswerBr("H<sub>3</sub>");
                     }
                     if (this.table.elements[i].numberofgroup == 6)
                     {
-                        TextofResult += "Lotne związki: " + this.styleAnswer("H<sub>2</sub>");
-                        TextofResult += this.styleAnswer(this.table.elements[i].symbol) + "\n<br>";
+                        this.ResultText += "Lotne związki: " + this.Styles.styleAnswer("H<sub>2</sub>");
+                        this.ResultText += this.Styles.styleAnswerBr(this.table.elements[i].symbol);
                     }
                     if (this.table.elements[i].numberofgroup == 7)
                     {
-                        TextofResult += "Lotne związki: " + this.styleAnswer("H");
-                        TextofResult += this.styleAnswer(this.table.elements[i].symbol) + "\n<br>";
+                        this.ResultText += "Lotne związki: " + this.Styles.styleAnswer("H");
+                        this.ResultText += this.Styles.styleAnswerBr(this.table.elements[i].symbol);
                     }
                 }
                 else
-                    TextofResult += "Lotne związki: " + "\n<br>";
+                    this.ResultText += "Lotne związki: " + this.Styles.br();
     
                 let res = "";
                 res = this.table.SPDF(this.table.elements[i].number);
-                TextofResult += "Elektroniczna Konfiguracja:\n<span style=\"letter-spacing: 0px; word-spacing: 0px; color: black; font-weight: bold;\">" + res + "\n</span><br>";
-                TextofResult += "Wartościowość: ";
+                this.ResultText += "Elektroniczna Konfiguracja:\n" + this.Styles.styleRes(res) + this.Styles.br();
+                this.ResultText += "Wartościowość: ";
                 for (let j = 0; j < this.table.elements[i].Valetnost.length; j++) 
-                    TextofResult += this.styleAnswer(this.table.elements[i].Valetnost[j]) + " ";
-                TextofResult += "\n<br>";
-                TextofResult += "Graficzna konfiguracja:\n";
+                    this.ResultText += this.Styles.styleAnswer(this.table.elements[i].Valetnost[j]) + " ";
+                this.ResultText += this.Styles.twoBr();
+                this.ResultText += this.Styles.styleHeaderText("Graficzna konfiguracja:\n");
                 break;
             }
         }
     
-        if (TextofResult != "")
-            return TextofResult;
+        if (this.ResultText != "")
+            return this.ResultText;
         else
-            return "<span class=\"notFound\">Nie znaleziono</span>";
+            return this.Styles.styleNotFound("Nie znaleziono");
     }
 }
 
 function writeInformation() {
     let table = new TableChemia();
-    let images = document.getElementsByClassName("graphicImg");
-    let jobText = new JobForTextChemia(table, document.getElementsByClassName("GetTextBySymbol")[0].value);
-    let Text = document.getElementById("TextofResult").innerHTML = jobText.getText();
-    if (Text == "<span class=\"notFound\">Nie znaleziono</span>") {
+    let styles = new MyStyles();
+    let result = new ResultTableChemia(table, document.getElementsByClassName("GetTextBySymbol")[0].value, styles);
+    document.getElementById("ResultText").innerHTML = result.mainFunction();
+    if (result.ResultText == styles.styleNotFound("Nie znaleziono")) {
         document.getElementById("graphicKonf").style.height = "0px";
         document.getElementById("graphicKonf").style.visibility = "hidden";
     }
     else {
         document.getElementById("graphicKonf").style.height = "500px";
         document.getElementById("graphicKonf").style.visibility = "visible";
+        let images = document.getElementsByClassName("graphicImg");
         let graphic = new Graphic(images, table);
         graphic.clearGraphic();
         graphic.drawGraphic();

@@ -181,3 +181,10 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.mainHTextResult {
+    font-size: 36px; 
+    color: rgb(188, 17, 227);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+}
