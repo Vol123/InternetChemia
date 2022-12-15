@@ -1594,7 +1594,7 @@ class MyStyles {
     }
 
     styleRes(res) {
-        return "<span style=\"letter-spacing: 0px; word-spacing: 0px; color: black; font-weight: bold;\">" + res + "</span>"
+        return "<span class=\"elektrKonf\">" + res + "</span>"
     }
 
     styleNotFound(Text) {
@@ -1726,10 +1726,12 @@ function writeInformation() {
     let result = new ResultTableChemia(table, document.getElementsByClassName("GetTextBySymbol")[0].value, styles);
     document.getElementById("ResultText").innerHTML = result.mainFunction();
     if (result.ResultText == styles.styleNotFound("Nie znaleziono")) {
+        document.getElementsByClassName("result")[0].style.height = "150px";
         document.getElementById("graphicKonf").style.height = "0px";
         document.getElementById("graphicKonf").style.visibility = "hidden";
     }
     else {
+        document.getElementsByClassName("result")[0].style.height = "1800px";
         document.getElementById("graphicKonf").style.height = "500px";
         document.getElementById("graphicKonf").style.visibility = "visible";
         let images = document.getElementsByClassName("graphicImg");

@@ -1,0 +1,154 @@
+@media only screen and (max-width: 1200px) {
+    .graphicKonf {
+        padding: 10px;
+    }
+
+    .itemSymbol {
+        margin-right: 12px;
+    }
+
+    .elektrKonf {
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        max-width: vw; 
+        padding: 0px 20px; 
+        align-items: center; 
+        justify-content: center; 
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .itemRow {
+        flex-wrap: wrap;
+    }
+
+    #sevenKonf {
+        justify-content: flex-end;
+        padding-top: 15px;
+        width: 100%;
+    }
+
+    .result {
+        width: 600px;
+        flex-shrink: 1;
+        margin: 10px auto;
+    }
+
+    .header {
+        flex-shrink: 10;
+        width: 500px;
+        margin: auto;
+    }
+    .form {
+        flex-shrink: 1;
+        width: 500px;
+    }
+    .search {
+        width: 60%;
+        flex-shrink: 10;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0px auto;
+    }
+
+    .result {
+        max-width: 400px;
+        margin: 10px auto;
+    }
+
+    .logoFon {
+        height: 100px;
+    }
+
+    .chemiaLogoImg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .graphicKonf {
+        padding-top: 200px;
+    }
+
+    .header {
+        flex-shrink: 1;
+    }
+
+    .form {
+        flex-shrink: 1;
+    }
+
+    .textLogo {
+        font-size: 60px;
+    }
+
+    .search {
+        width: 190px;
+    }
+
+    .GetTextBySymbol {
+        width: 150px;
+    }
+
+    #mobile {
+        justify-content: flex-end;
+        padding-top: 15px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .logoFon {
+        margin-left: -35px;
+        height: 100px;
+    }
+
+    .form {
+        margin-left: -45px;
+        flex-shrink: 1;
+    }
+
+    .result {
+        max-width: 400px;
+        margin: 10px auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .logoFon {
+        height: 100px;
+        margin-left: -10px;
+    }
+
+    .form {
+        flex-shrink: 1;
+        margin-left: -20px;
+    }
+
+    .result {
+        max-width: 400px;
+        margin: 10px auto;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .logoFon {
+        height: 100px;
+        margin-left: -10px;
+    }
+
+    .form {
+        flex-shrink: 1;
+        margin-left: -20px;
+    }
+
+    .result {
+        max-width: 400px;
+        margin: 10px auto;
+        margin-left: 15px;
+    }
+}
