@@ -652,6 +652,17 @@ class TableChemia {
         element.metal = this.metal;
         element.elUjemn = 1.1;
         this.elements.push(element);
+/***/
+        element = new Element();
+        element.name = "Cer";
+        element.symbol = "Ce";
+        element.number = 58;
+        element.Ar = 140;
+        element.numberofgroup = 3;
+        element.numberofperiod = 6;
+        element.metal = this.metal;
+        element.elUjemn = 1.1;
+        this.elements.push(element);
 
         element = new Element();
         element.name = "Hafn";
@@ -1623,7 +1634,7 @@ class ResultTableChemia {
             if (this.table.elements[i].symbol.toString().toLowerCase() == this.Text.toString().toLowerCase() || 
                 this.table.elements[i].name.toString().toLowerCase() == this.Text.toString().toLowerCase()) {
                 this.table.currentElement = i;
-                this.ResultText += this.Styles.styleHeaderText("Cechy Pierwiastka\n</span><br><br>");
+                this.ResultText += this.Styles.styleHeaderText("Cechy\n</span><br><br>");
                 this.ResultText +=  "Symbol atomu: " + this.Styles.styleAnswerBr(this.table.elements[i].symbol);
                 this.ResultText += "Nazwa atomu: " + this.Styles.styleAnswerBr(this.table.elements[i].name);
                 this.ResultText += "Numer sekwencji: " + this.Styles.styleAnswerBr(this.table.elements[i].number);
