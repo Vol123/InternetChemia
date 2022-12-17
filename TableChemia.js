@@ -1718,7 +1718,7 @@ class ResultTableChemia {
                 for (let j = 0; j < this.table.elements[i].Valetnost.length; j++) 
                     this.ResultText += this.Styles.styleAnswer(this.table.elements[i].Valetnost[j]) + " ";
                 this.ResultText += this.Styles.twoBr();
-                this.ResultText += this.Styles.styleHeaderText("Graficzna konfiguracja\n\n");
+                this.ResultText += this.Styles.styleHeaderText("Graficzna\nkonfiguracja\n\n");
                 break;
             }
         }
