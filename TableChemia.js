@@ -69,7 +69,6 @@ class TableChemia {
         element.elUjemn = 1.5;
         this.elements.push(element);
 
-        // ----------------------------------------
         element = new Element();
         element.name = "Bor";
         element.symbol = "B";
