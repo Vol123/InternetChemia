@@ -11,6 +11,8 @@ body {
 .lblMainText {
     font-size: 32px;
     color:rgb(71, 12, 101);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .GetTextBySymbol {
@@ -32,7 +34,7 @@ body {
     margin-left: 20px;
     border-radius: 15px;
     background-color: rgb(53, 199, 150);
-    box-shadow: 0px 0px 30px 12px rgb(18, 146, 114);
+    box-shadow: 0px 0px 15px 6px rgb(18, 146, 114);
     transition: all 0.9s;
     border: 1px solid rgb(34, 96, 212);
 }
@@ -52,9 +54,8 @@ body {
     border-radius: 30px;
     text-align: center;
     font-size: 20px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
-    font-style: italic;
     color:rgb(18, 46, 184);
     max-width: 130%;
     height: 150px;
@@ -72,11 +73,11 @@ body {
 .notFound {
     text-decoration: solid;
     font-size: 32px;
-    color: red;
-    font-family:'Times New Roman', Times, serif;
+    color: rgb(209, 9, 9);
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
     word-spacing: 3px;
-    font-style: normal;
+    font-weight: bold;
 }
 
 .graphicKonf {
@@ -160,7 +161,7 @@ body {
     color:rgb(95, 12, 137);
     text-shadow:
     0 0 10px rgb(95, 12, 137),
-    0 0 20px rgb(95, 12, 137);
+    0 0 15px rgb(95, 12, 137);
 }
 
 .searchImg {
@@ -194,8 +195,8 @@ body {
 }
 
 .mainHTextResult {
-    font-size: 36px; 
-    color: rgb(188, 17, 227);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: normal;
+    font-size: 28px; 
+    color:rgb(7, 29, 139);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
