@@ -1702,7 +1702,7 @@ class ResultTableChemia {
                     this.ResultText += "Lotne związki: " + this.Styles.br();
     
                 let res = "";
-                res = this.table.SPDF(this.table.elements[i].number);
+                res = " " + this.table.SPDF(this.table.elements[i].number);
                 this.ResultText += "Elektroniczna Konfiguracja:" + this.Styles.br() + this.Styles.styleRes(res) + this.Styles.br();
                 this.ResultText += "Wartościowość: ";
                 for (let j = 0; j < this.table.elements[i].Valetnost.length; j++) 
