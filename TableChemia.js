@@ -1623,7 +1623,7 @@ class ResultTableChemia {
             if (this.table.elements[i].symbol.toString().toLowerCase() == this.Text.toString().toLowerCase() || 
                 this.table.elements[i].name.toString().toLowerCase() == this.Text.toString().toLowerCase()) {
                 this.table.currentElement = i;
-                this.ResultText += this.Styles.styleHeaderText("Cechy Pierwiastka\n</span><br>");
+                this.ResultText += this.Styles.styleHeaderText("Cechy Pierwiastka\n</span><br><br>");
                 this.ResultText +=  "Symbol atomu: " + this.Styles.styleAnswerBr(this.table.elements[i].symbol);
                 this.ResultText += "Nazwa atomu: " + this.Styles.styleAnswerBr(this.table.elements[i].name);
                 this.ResultText += "Numer sekwencji: " + this.Styles.styleAnswerBr(this.table.elements[i].number);
@@ -1708,7 +1708,7 @@ class ResultTableChemia {
                 for (let j = 0; j < this.table.elements[i].Valetnost.length; j++) 
                     this.ResultText += this.Styles.styleAnswer(this.table.elements[i].Valetnost[j]) + " ";
                 this.ResultText += this.Styles.twoBr();
-                this.ResultText += this.Styles.styleHeaderText("Graficzna konfiguracja:\n");
+                this.ResultText += this.Styles.styleHeaderText("Graficzna konfiguracja\n\n");
                 break;
             }
         }

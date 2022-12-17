@@ -9,7 +9,7 @@ body {
 }
 
 .lblMainText {
-    font-size: 32px;
+    font-size: 28px;
     color:rgb(71, 12, 101);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -72,7 +72,7 @@ body {
 
 .notFound {
     text-decoration: solid;
-    font-size: 32px;
+    font-size: 24px;
     color: rgb(209, 9, 9);
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
@@ -195,7 +195,7 @@ body {
 }
 
 .mainHTextResult {
-    font-size: 28px; 
+    font-size: 30px; 
     color:rgb(7, 29, 139);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
