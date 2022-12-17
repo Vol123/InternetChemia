@@ -1731,7 +1731,7 @@ function writeInformation() {
         document.getElementById("graphicKonf").style.visibility = "hidden";
     }
     else {
-        document.getElementsByClassName("result")[0].style.height = "1800px";
+        document.getElementsByClassName("result")[0].style.height = "1860px";
         document.getElementById("graphicKonf").style.height = "500px";
         document.getElementById("graphicKonf").style.visibility = "visible";
         let images = document.getElementsByClassName("graphicImg");
