@@ -1014,7 +1014,7 @@ class TableChemia {
         element.metal = this.metal;
         element.elUjemn = 1.3;
         this.elements.push(element);
-/***/
+
         element = new Element();
         element.name = "Protaktyn";
         element.symbol = "Pa";
@@ -1024,6 +1024,129 @@ class TableChemia {
         element.numberofperiod = 7;
         element.metal = this.metal;
         element.elUjemn = 1.5;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Uran";
+        element.symbol = "U";
+        element.number = 92;
+        element.Ar = 238;
+        element.numberofgroup = 3;
+        element.numberofperiod = 7;
+        element.metal = this.metal;
+        element.elUjemn = 1.7;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Neptun";
+        element.symbol = "Np";
+        element.number = 93;
+        element.Ar = 237;
+        element.numberofgroup = 3;
+        element.numberofperiod = 7;
+        element.metal = this.metal;
+        element.elUjemn = 1.4;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Pluton";
+        element.symbol = "Pl";
+        element.number = 94;
+        element.Ar = 244;
+        element.numberofgroup = 3;
+        element.numberofperiod = 7;
+        element.metal = this.metal;
+        element.elUjemn = 1.3;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Ameryk";
+        element.symbol = "Am";
+        element.number = 95;
+        element.Ar = 243;
+        element.numberofgroup = 3;
+        element.numberofperiod = 7;
+        element.metal = this.metal;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Kiur";
+        element.symbol = "Cm";
+        element.number = 96;
+        element.Ar = 247;
+        element.numberofgroup = 3;
+        element.numberofperiod = 7;
+        element.metal = this.metal;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Berkel";
+        element.symbol = "Bk";
+        element.number = 97;
+        element.Ar = 247;
+        element.numberofgroup = 3;
+        element.numberofperiod = 7;
+        element.metal = this.metal;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Kaliforn";
+        element.symbol = "Cf";
+        element.number = 98;
+        element.Ar = 251;
+        element.numberofgroup = 3;
+        element.numberofperiod = 7;
+        element.metal = this.metal;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Einstein";
+        element.symbol = "Es";
+        element.number = 99;
+        element.Ar = 252;
+        element.numberofgroup = 3;
+        element.numberofperiod = 7;
+        element.metal = this.metal;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Ferm";
+        element.symbol = "Fm";
+        element.number = 100;
+        element.Ar = 257;
+        element.numberofgroup = 3;
+        element.numberofperiod = 7;
+        element.metal = this.metal;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Mendelew";
+        element.symbol = "Md";
+        element.number = 101;
+        element.Ar = 258;
+        element.numberofgroup = 3;
+        element.numberofperiod = 7;
+        element.metal = this.metal;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Nobel";
+        element.symbol = "Nb";
+        element.number = 102;
+        element.Ar = 259;
+        element.numberofgroup = 3;
+        element.numberofperiod = 7;
+        element.metal = this.metal;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Lorens";
+        element.symbol = "Lr";
+        element.number = 103;
+        element.Ar = 262;
+        element.numberofgroup = 3;
+        element.numberofperiod = 7;
+        element.metal = this.metal;
         this.elements.push(element);
 
         element = new Element();
@@ -1040,7 +1163,7 @@ class TableChemia {
         element.name = "Dubn";
         element.symbol = "Db";
         element.number = 105;
-        element.Ar = 270;
+        element.Ar = 268;
         element.numberofgroup = 5;
         element.numberofperiod = 7;
         element.metal = this.metal;
@@ -1050,7 +1173,7 @@ class TableChemia {
         element.name = "Seaborg";
         element.symbol = "Sg";
         element.number = 106;
-        element.Ar = 270;
+        element.Ar = 271;
         element.numberofgroup = 6;
         element.numberofperiod = 7;
         element.metal = this.metal;
@@ -1070,7 +1193,7 @@ class TableChemia {
         element.name = "Has";
         element.symbol = "Hs";
         element.number = 108;
-        element.Ar = 270;
+        element.Ar = 277;
         element.numberofgroup = 8;
         element.numberofperiod = 7;
         element.metal = this.metal;
@@ -1239,10 +1362,6 @@ class TableChemia {
         this.elements[14].Valetnost[1] = 1;
         this.elements[14].Valetnost[2] = 3;
         this.elements[14].Valetnost[2] = 5;
-
-        //-1, +1, (+2), +3, (+4), +5, +7
-
-        // -2, +2, +4, +6
 
         this.elements[15].Valetnost = [4];
         this.elements[15].Valetnost[0] = -2;
@@ -1449,110 +1568,235 @@ class TableChemia {
         this.elements[56].Valetnost = [1];
         this.elements[56].Valetnost[0] = 3;
 
-        this.elements[57].Valetnost = [1];
-        this.elements[57].Valetnost[0] = 4;
+        this.elements[57].Valetnost = [2];
+        this.elements[57].Valetnost[0] = 3;
+        this.elements[57].Valetnost[1] = 4;
 
-        this.elements[58].Valetnost = [3];
+        this.elements[58].Valetnost = [2];
         this.elements[58].Valetnost[0] = 3;
         this.elements[58].Valetnost[1] = 4;
-        this.elements[58].Valetnost[2] = 5;
 
-        this.elements[59].Valetnost = [5];
-        this.elements[59].Valetnost[0] = 2;
-        this.elements[59].Valetnost[1] = 3;
-        this.elements[59].Valetnost[2] = 4;
-        this.elements[59].Valetnost[3] = 5;
-        this.elements[59].Valetnost[4] = 6;
+        this.elements[59].Valetnost = [1];
+        this.elements[59].Valetnost[0] = 3;
 
-        this.elements[60].Valetnost = [8];
-        this.elements[60].Valetnost[0] = -1;
-        this.elements[60].Valetnost[1] = 1;
-        this.elements[60].Valetnost[2] = 2;
-        this.elements[60].Valetnost[3] = 3;
-        this.elements[60].Valetnost[4] = 4;
-        this.elements[60].Valetnost[5] = 5;
-        this.elements[60].Valetnost[6] = 6;
-        this.elements[60].Valetnost[7] = 7;
+        this.elements[60].Valetnost = [1];
+        this.elements[60].Valetnost[0] = 3;
 
-        this.elements[60].Valetnost = [5];
-        this.elements[60].Valetnost[0] = 2;
-        this.elements[60].Valetnost[1] = 3;
-        this.elements[60].Valetnost[2] = 4;
-        this.elements[60].Valetnost[3] = 6;
-        this.elements[60].Valetnost[4] = 8;
+        this.elements[61].Valetnost = [2];
+        this.elements[61].Valetnost[0] = 2;
+        this.elements[61].Valetnost[1] = 3;
 
-        this.elements[61].Valetnost = [5];
-        this.elements[61].Valetnost[0] = 1;
-        this.elements[61].Valetnost[1] = 2;
-        this.elements[61].Valetnost[2] = 3;
-        this.elements[61].Valetnost[3] = 4;
-        this.elements[61].Valetnost[4] = 6;
+        this.elements[62].Valetnost = [2];
+        this.elements[62].Valetnost[0] = 2;
+        this.elements[62].Valetnost[1] = 3;
 
-        this.elements[62].Valetnost = [5];
-        this.elements[62].Valetnost[0] = 1;
-        this.elements[62].Valetnost[1] = 2;
-        this.elements[62].Valetnost[2] = 3;
-        this.elements[62].Valetnost[3] = 4;
-        this.elements[62].Valetnost[4] = 6;
-
-        this.elements[63].Valetnost = [3];
-        this.elements[63].Valetnost[0] = 1;
-        this.elements[63].Valetnost[1] = 2;
-        this.elements[63].Valetnost[2] = 3;
+        this.elements[63].Valetnost = [1];
+        this.elements[63].Valetnost[0] = 3;
 
         this.elements[64].Valetnost = [2];
-        this.elements[64].Valetnost[0] = 1;
-        this.elements[64].Valetnost[1] = 2;
+        this.elements[64].Valetnost[0] = 3;
+        this.elements[64].Valetnost[1] = 4;
 
-        this.elements[65].Valetnost = [3];
-        this.elements[65].Valetnost[0] = 1;
-        this.elements[65].Valetnost[1] = 2;
-        this.elements[65].Valetnost[2] = 3;
+        this.elements[65].Valetnost = [1];
+        this.elements[65].Valetnost[0] = 3;
 
-        this.elements[66].Valetnost = [2];
-        this.elements[66].Valetnost[0] = 2;
-        this.elements[66].Valetnost[1] = 4;
+        this.elements[66].Valetnost = [1];
+        this.elements[66].Valetnost[0] = 3;
 
-        this.elements[67].Valetnost = [5];
-        this.elements[67].Valetnost[0] = -3;
-        this.elements[67].Valetnost[1] = 2;
-        this.elements[67].Valetnost[2] = 3;
-        this.elements[67].Valetnost[3] = 4;
-        this.elements[67].Valetnost[4] = 5;
+        this.elements[67].Valetnost = [1];
+        this.elements[67].Valetnost[0] = 3;
 
-        this.elements[68].Valetnost = [4];
-        this.elements[68].Valetnost[0] = -2;
-        this.elements[68].Valetnost[1] = 2;
-        this.elements[68].Valetnost[2] = 4;
-        this.elements[68].Valetnost[3] = 6;
+        this.elements[68].Valetnost = [1];
+        this.elements[68].Valetnost[0] = 3;
 
-        this.elements[69].Valetnost = [0];
+        this.elements[69].Valetnost = [2];
+        this.elements[69].Valetnost[0] = 2;
+        this.elements[69].Valetnost[1] = 3;
 
         this.elements[70].Valetnost = [1];
-        this.elements[70].Valetnost[0] = 0;
+        this.elements[70].Valetnost[0] = 3;
 
-        this.elements[71].Valetnost = [0];
+// ---------------------------------------------------------------------------------
+        this.elements[71].Valetnost = [1];
+        this.elements[71].Valetnost[0] = 4;
 
-        this.elements[72].Valetnost = [1];
-        this.elements[72].Valetnost[0] = 2;
+        this.elements[72].Valetnost = [3];
+        this.elements[72].Valetnost[0] = 3;
+        this.elements[72].Valetnost[1] = 4;
+        this.elements[72].Valetnost[2] = 5;
 
-        this.elements[73].Valetnost = [1];
-        this.elements[73].Valetnost[0] = 3;
+        this.elements[73].Valetnost = [5];
+        this.elements[73].Valetnost[0] = 2;
+        this.elements[73].Valetnost[1] = 3;
+        this.elements[73].Valetnost[2] = 4;
+        this.elements[73].Valetnost[3] = 5;
+        this.elements[73].Valetnost[4] = 6;
 
-        this.elements[74].Valetnost = [1];
-        this.elements[74].Valetnost[0] = 4;
+        this.elements[74].Valetnost = [8];
+        this.elements[74].Valetnost[0] = -1;
+        this.elements[74].Valetnost[1] = 1;
+        this.elements[74].Valetnost[2] = 2;
+        this.elements[74].Valetnost[3] = 3;
+        this.elements[74].Valetnost[4] = 4;
+        this.elements[74].Valetnost[5] = 5;
+        this.elements[74].Valetnost[6] = 6;
+        this.elements[74].Valetnost[7] = 7;
 
-        this.elements[75].Valetnost = [1];
-        this.elements[75].Valetnost[0] = 5;
+        this.elements[75].Valetnost = [5];
+        this.elements[75].Valetnost[0] = 2;
+        this.elements[75].Valetnost[1] = 3;
+        this.elements[75].Valetnost[2] = 4;
+        this.elements[75].Valetnost[3] = 6;
+        this.elements[75].Valetnost[4] = 8;
 
         this.elements[76].Valetnost = [5];
-        this.elements[76].Valetnost[0] = 2;
-        this.elements[76].Valetnost[1] = 3;
-        this.elements[76].Valetnost[2] = 4;
-        this.elements[76].Valetnost[3] = 5;
+        this.elements[76].Valetnost[0] = 1;
+        this.elements[76].Valetnost[1] = 2;
+        this.elements[76].Valetnost[2] = 3;
+        this.elements[76].Valetnost[3] = 4;
         this.elements[76].Valetnost[4] = 6;
 
-        for (let i = 77; i < this.elements.length; i++)
+        this.elements[77].Valetnost = [5];
+        this.elements[77].Valetnost[0] = 1;
+        this.elements[77].Valetnost[1] = 2;
+        this.elements[77].Valetnost[2] = 3;
+        this.elements[77].Valetnost[3] = 4;
+        this.elements[77].Valetnost[4] = 6;
+
+        this.elements[78].Valetnost = [3];
+        this.elements[78].Valetnost[0] = 1;
+        this.elements[78].Valetnost[1] = 2;
+        this.elements[78].Valetnost[2] = 3;
+
+        this.elements[79].Valetnost = [2];
+        this.elements[79].Valetnost[0] = 1;
+        this.elements[79].Valetnost[1] = 2;
+
+        this.elements[80].Valetnost = [3];
+        this.elements[80].Valetnost[0] = 1;
+        this.elements[80].Valetnost[1] = 2;
+        this.elements[80].Valetnost[2] = 3;
+
+        this.elements[81].Valetnost = [2];
+        this.elements[81].Valetnost[0] = 2;
+        this.elements[81].Valetnost[1] = 4;
+
+        this.elements[82].Valetnost = [5];
+        this.elements[82].Valetnost[0] = -3;
+        this.elements[82].Valetnost[1] = 2;
+        this.elements[82].Valetnost[2] = 3;
+        this.elements[82].Valetnost[3] = 4;
+        this.elements[82].Valetnost[4] = 5;
+
+        this.elements[83].Valetnost = [4];
+        this.elements[83].Valetnost[0] = -2;
+        this.elements[83].Valetnost[1] = 2;
+        this.elements[83].Valetnost[2] = 4;
+        this.elements[83].Valetnost[3] = 6;
+
+        this.elements[84].Valetnost = [4];
+        this.elements[84].Valetnost[0] = 1;
+        this.elements[84].Valetnost[1] = 3;
+        this.elements[84].Valetnost[2] = 5;
+        this.elements[84].Valetnost[3] = 7;
+
+        this.elements[85].Valetnost = [2];
+        this.elements[85].Valetnost[0] = 0;
+        this.elements[85].Valetnost[1] = 2;
+
+        this.elements[86].Valetnost = [1];
+        this.elements[86].Valetnost[0] = 1;
+
+        this.elements[87].Valetnost = [1];
+        this.elements[87].Valetnost[0] = 2;
+
+        this.elements[88].Valetnost = [1];
+        this.elements[88].Valetnost[0] = 3;
+
+        this.elements[89].Valetnost = [1];
+        this.elements[89].Valetnost[0] = 4;
+
+        this.elements[90].Valetnost = [2];
+        this.elements[90].Valetnost[0] = 4;
+        this.elements[90].Valetnost[1] = 5;
+
+        this.elements[91].Valetnost = [4];
+        this.elements[91].Valetnost[0] = 3;
+        this.elements[91].Valetnost[1] = 4;
+        this.elements[91].Valetnost[2] = 5;
+        this.elements[91].Valetnost[3] = 6;
+
+        this.elements[92].Valetnost = [5];
+        this.elements[92].Valetnost[0] = 3;
+        this.elements[92].Valetnost[1] = 4;
+        this.elements[92].Valetnost[2] = 5;
+        this.elements[92].Valetnost[3] = 6;
+        this.elements[92].Valetnost[4] = 7;
+
+        this.elements[93].Valetnost = [4];
+        this.elements[93].Valetnost[0] = 3;
+        this.elements[93].Valetnost[1] = 4;
+        this.elements[93].Valetnost[2] = 5;
+        this.elements[93].Valetnost[3] = 6;
+
+        this.elements[94].Valetnost = [4];
+        this.elements[94].Valetnost[0] = 3;
+        this.elements[94].Valetnost[1] = 4;
+        this.elements[94].Valetnost[2] = 5;
+        this.elements[94].Valetnost[3] = 6;
+
+        this.elements[95].Valetnost = [2];
+        this.elements[95].Valetnost[0] = 3;
+        this.elements[95].Valetnost[1] = 4;
+
+        this.elements[96].Valetnost = [2];
+        this.elements[96].Valetnost[0] = 3;
+        this.elements[96].Valetnost[1] = 4;
+
+        this.elements[97].Valetnost = [3];
+        this.elements[97].Valetnost[0] = 2;
+        this.elements[97].Valetnost[1] = 3;
+        this.elements[97].Valetnost[2] = 4;
+
+        this.elements[98].Valetnost = [2];
+        this.elements[98].Valetnost[0] = 2;
+        this.elements[98].Valetnost[1] = 3;
+
+        this.elements[99].Valetnost = [2];
+        this.elements[99].Valetnost[0] = 2;
+        this.elements[99].Valetnost[1] = 3;
+
+        this.elements[100].Valetnost = [2];
+        this.elements[100].Valetnost[0] = 2;
+        this.elements[100].Valetnost[1] = 3;
+
+        this.elements[101].Valetnost = [2];
+        this.elements[101].Valetnost[0] = 2;
+        this.elements[101].Valetnost[1] = 3;
+
+        this.elements[102].Valetnost = [1];
+        this.elements[102].Valetnost[0] = 3;
+
+        this.elements[103].Valetnost = [1];
+        this.elements[103].Valetnost[0] = 4;
+
+        this.elements[104].Valetnost = [1];
+        this.elements[104].Valetnost[0] = 5;
+
+        this.elements[105].Valetnost = [5];
+        this.elements[105].Valetnost[0] = 2;
+        this.elements[105].Valetnost[1] = 3;
+        this.elements[105].Valetnost[2] = 4;
+        this.elements[105].Valetnost[3] = 5;
+        this.elements[105].Valetnost[4] = 6;
+
+        this.elements[106].Valetnost = [1];
+        this.elements[106].Valetnost[0] = 7;
+
+        this.elements[107].Valetnost = [1];
+        this.elements[107].Valetnost[0] = 8;
+
+        for (let i = 108; i < this.elements.length; i++)
             this.elements[i].Valetnost = [0];
     }
 
@@ -1833,15 +2077,15 @@ class ResultTableChemia {
                     if (this.table.elements[i].numberofgroup == 2)
                         this.ResultText += this.Styles.styleAnswerBr("O");
                     if (this.table.elements[i].numberofgroup == 3)
-                        this.ResultText += this.Styles.styleAnswerBr("2O<sub>3</sub>");
+                        this.ResultText += this.Styles.styleAnswerBr("<sub>2</sub>O<sub>3</sub>");
                     if (this.table.elements[i].numberofgroup == 4)
                         this.ResultText += this.Styles.styleAnswerBr("O<sub>2</sub>");
                     if (this.table.elements[i].numberofgroup == 5)
-                        this.ResultText += this.Styles.styleAnswerBr("2O<sub>5</sub>");
+                        this.ResultText += this.Styles.styleAnswerBr("<sub>2</sub>O<sub>5</sub>");
                     if (this.table.elements[i].numberofgroup == 6)
                         this.ResultText += this.Styles.styleAnswerBr("O<sub>3</sub>");
                     if (this.table.elements[i].numberofgroup == 7)
-                        this.ResultText += this.Styles.styleAnswerBr("2O<sub>7</sub>");
+                        this.ResultText += this.Styles.styleAnswerBr("<sub>2</sub>O<sub>7</sub>");
                     if (this.table.elements[i].numberofgroup == 8)
                         this.ResultText += this.Styles.styleAnswerBr("O<sub>4</sub>");
                     if (this.table.elements[i].numberofgroup == 8)
