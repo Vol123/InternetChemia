@@ -651,7 +651,7 @@ class TableChemia {
         element.metal = this.metal;
         element.elUjemn = 1.1;
         this.elements.push(element);
-/***/
+
         element = new Element();
         element.name = "Cer";
         element.symbol = "Ce";
@@ -661,6 +661,149 @@ class TableChemia {
         element.numberofperiod = 6;
         element.metal = this.metal;
         element.elUjemn = 1.1;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Prazeodym";
+        element.symbol = "Pr";
+        element.number = 59;
+        element.Ar = 141;
+        element.numberofgroup = 3;
+        element.numberofperiod = 6;
+        element.metal = this.metal;
+        element.elUjemn = 1.1;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Neodym";
+        element.symbol = "Nd";
+        element.number = 60;
+        element.Ar = 144;
+        element.numberofgroup = 3;
+        element.numberofperiod = 6;
+        element.metal = this.metal;
+        element.elUjemn = 1.2;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Promet";
+        element.symbol = "Pm";
+        element.number = 61;
+        element.Ar = 145;
+        element.numberofgroup = 3;
+        element.numberofperiod = 6;
+        element.metal = this.metal;
+        element.elUjemn = 1.2;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Samar";
+        element.symbol = "Sm";
+        element.number = 62;
+        element.Ar = 150;
+        element.numberofgroup = 3;
+        element.numberofperiod = 6;
+        element.metal = this.metal;
+        element.elUjemn = 1.2;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Europ";
+        element.symbol = "Eu";
+        element.number = 63;
+        element.Ar = 152;
+        element.numberofgroup = 3;
+        element.numberofperiod = 6;
+        element.metal = this.metal;
+        element.elUjemn = 1.0;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Gadolin";
+        element.symbol = "Gd";
+        element.number = 64;
+        element.Ar = 157;
+        element.numberofgroup = 3;
+        element.numberofperiod = 6;
+        element.metal = this.metal;
+        element.elUjemn = 1.1;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Terb";
+        element.symbol = "Tb";
+        element.number = 65;
+        element.Ar = 159;
+        element.numberofgroup = 3;
+        element.numberofperiod = 6;
+        element.metal = this.metal;
+        element.elUjemn = 1.2;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Dysproz";
+        element.symbol = "Dy";
+        element.number = 66;
+        element.Ar = 163;
+        element.numberofgroup = 3;
+        element.numberofperiod = 6;
+        element.metal = this.metal;
+        element.elUjemn = 1.2;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Holm";
+        element.symbol = "Ho";
+        element.number = 67;
+        element.Ar = 165;
+        element.numberofgroup = 3;
+        element.numberofperiod = 6;
+        element.metal = this.metal;
+        element.elUjemn = 1.2;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Erb";
+        element.symbol = "Er";
+        element.number = 68;
+        element.Ar = 167;
+        element.numberofgroup = 3;
+        element.numberofperiod = 6;
+        element.metal = this.metal;
+        element.elUjemn = 1.2;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Tul";
+        element.symbol = "Tm";
+        element.number = 69;
+        element.Ar = 169;
+        element.numberofgroup = 3;
+        element.numberofperiod = 6;
+        element.metal = this.metal;
+        element.elUjemn = 1.2;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Iterb";
+        element.symbol = "Yb";
+        element.number = 70;
+        element.Ar = 173;
+        element.numberofgroup = 3;
+        element.numberofperiod = 6;
+        element.metal = this.metal;
+        element.elUjemn = 1.1;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Lutet";
+        element.symbol = "Lu";
+        element.number = 71;
+        element.Ar = 175;
+        element.numberofgroup = 3;
+        element.numberofperiod = 6;
+        element.metal = this.metal;
+        element.elUjemn = 1.2;
         this.elements.push(element);
 
         element = new Element();
@@ -859,6 +1002,28 @@ class TableChemia {
         element.numberofperiod = 7;
         element.metal = this.metal;
         element.elUjemn = 1.1;
+        this.elements.push(element);
+
+        element = new Element();
+        element.name = "Tor";
+        element.symbol = "Th";
+        element.number = 90;
+        element.Ar = 232;
+        element.numberofgroup = 3;
+        element.numberofperiod = 7;
+        element.metal = this.metal;
+        element.elUjemn = 1.3;
+        this.elements.push(element);
+/***/
+        element = new Element();
+        element.name = "Protaktyn";
+        element.symbol = "Pa";
+        element.number = 91;
+        element.Ar = 231;
+        element.numberofgroup = 3;
+        element.numberofperiod = 7;
+        element.metal = this.metal;
+        element.elUjemn = 1.5;
         this.elements.push(element);
 
         element = new Element();
@@ -1741,7 +1906,7 @@ function writeInformation() {
         document.getElementById("graphicKonf").style.visibility = "hidden";
     }
     else {
-        document.getElementsByClassName("result")[0].style.height = "1860px";
+        document.getElementsByClassName("result")[0].style.height = "1900px";
         document.getElementById("graphicKonf").style.height = "500px";
         document.getElementById("graphicKonf").style.visibility = "visible";
         let images = document.getElementsByClassName("graphicImg");
