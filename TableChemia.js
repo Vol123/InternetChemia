@@ -1,8 +1,6 @@
 class Element {
     symbol;
     number;
-    numberofperiod;
-    numberofgroup;
     period;
     group;
     metal;
@@ -30,8 +28,8 @@ class TableChemia {
         element.symbol = "H";
         element.number = 1;
         element.Ar = 1;
-        element.numberofgroup = 1;
-        element.numberofperiod = 1;
+        element.group = 1;
+        element.period = 1;
         element.metal = this.nemetal;
         element.elUjemn = 2.1;
         this.elements.push(element);
@@ -41,8 +39,8 @@ class TableChemia {
         element.symbol = "He";
         element.number = 2;
         element.Ar = 4;
-        element.numberofgroup = 8;
-        element.numberofperiod = 1;
+        element.group = 18;
+        element.period = 1;
         element.metal = this.nemetal;
         element.elUjemn = 0;
         this.elements.push(element);
@@ -52,8 +50,8 @@ class TableChemia {
         element.symbol = "Li";
         element.number = 3;
         element.Ar = 7;
-        element.numberofgroup = 1;
-        element.numberofperiod = 2;
+        element.group = 1;
+        element.period = 2;
         element.metal = this.metal;
         element.elUjemn = 1.0;
         this.elements.push(element);
@@ -63,8 +61,8 @@ class TableChemia {
         element.symbol = "Be";
         element.number = 4;
         element.Ar = 9;
-        element.numberofgroup = 2;
-        element.numberofperiod = 2;
+        element.group = 2;
+        element.period = 2;
         element.metal = this.metal;
         element.elUjemn = 1.5;
         this.elements.push(element);
@@ -74,8 +72,8 @@ class TableChemia {
         element.symbol = "B";
         element.number = 5;
         element.Ar = 11;
-        element.numberofgroup = 3;
-        element.numberofperiod = 2;
+        element.group = 13;
+        element.period = 2;
         element.metal = this.nemetal;
         element.elUjemn = 2.0;
         this.elements.push(element);
@@ -85,8 +83,8 @@ class TableChemia {
         element.symbol = "C";
         element.number = 6;
         element.Ar = 12;
-        element.numberofgroup = 4;
-        element.numberofperiod = 2;
+        element.group = 14;
+        element.period = 2;
         element.metal = this.nemetal;
         element.elUjemn = 2.5;
         this.elements.push(element);
@@ -96,8 +94,8 @@ class TableChemia {
         element.symbol = "N";
         element.number = 7;
         element.Ar = 14;
-        element.numberofgroup = 5;
-        element.numberofperiod = 2;
+        element.group = 15;
+        element.period = 2;
         element.metal = this.nemetal;
         element.elUjemn = 3.0;
         this.elements.push(element);
@@ -107,8 +105,8 @@ class TableChemia {
         element.symbol = "O";
         element.number = 8;
         element.Ar = 16;
-        element.numberofgroup = 6;
-        element.numberofperiod = 2;
+        element.group = 16;
+        element.period = 2;
         element.metal = this.nemetal;
         element.elUjemn = 3.5;
         this.elements.push(element);
@@ -118,8 +116,8 @@ class TableChemia {
         element.symbol = "F";
         element.number = 9;
         element.Ar = 19;
-        element.numberofgroup = 7;
-        element.numberofperiod = 2;
+        element.group = 17;
+        element.period = 2;
         element.metal = this.nemetal;
         element.elUjemn = 4.0;
         this.elements.push(element);
@@ -129,8 +127,8 @@ class TableChemia {
         element.symbol = "Ne";
         element.number = 10;
         element.Ar = 20;
-        element.numberofgroup = 8;
-        element.numberofperiod = 2;
+        element.group = 18;
+        element.period = 2;
         element.metal = this.nemetal;
         element.elUjemn = 0;
         this.elements.push(element);
@@ -140,8 +138,8 @@ class TableChemia {
         element.symbol = "Na";
         element.number = 11;
         element.Ar = 23;
-        element.numberofgroup = 1;
-        element.numberofperiod = 3;
+        element.group = 1;
+        element.period = 3;
         element.metal = this.metal;
         element.elUjemn = 0.9;
         this.elements.push(element);
@@ -151,8 +149,8 @@ class TableChemia {
         element.symbol = "Mg";
         element.number = 12;
         element.Ar = 24;
-        element.numberofgroup = 2;
-        element.numberofperiod = 3;
+        element.group = 2;
+        element.period = 3;
         element.metal = this.metal;
         element.elUjemn = 1.2;
         this.elements.push(element);
@@ -162,8 +160,8 @@ class TableChemia {
         element.symbol = "Al";
         element.number = 13;
         element.Ar = 27;
-        element.numberofgroup = 3;
-        element.numberofperiod = 3;
+        element.group = 13;
+        element.period = 3;
         element.metal = this.metal;
         element.elUjemn = 1.5;
         this.elements.push(element);
@@ -173,8 +171,8 @@ class TableChemia {
         element.symbol = "Si";
         element.number = 14;
         element.Ar = 28;
-        element.numberofgroup = 4;
-        element.numberofperiod = 3;
+        element.group = 14;
+        element.period = 3;
         element.metal = this.nemetal;
         element.elUjemn = 1.8;
         this.elements.push(element);
@@ -184,8 +182,8 @@ class TableChemia {
         element.symbol = "P";
         element.number = 15;
         element.Ar = 31;
-        element.numberofgroup = 5;
-        element.numberofperiod = 3;
+        element.group = 15;
+        element.period = 3;
         element.metal = this.nemetal;
         element.elUjemn = 2.1;
         this.elements.push(element);
@@ -195,8 +193,8 @@ class TableChemia {
         element.symbol = "S";
         element.number = 16;
         element.Ar = 32;
-        element.numberofgroup = 6;
-        element.numberofperiod = 3;
+        element.group = 16;
+        element.period = 3;
         element.metal = this.nemetal;
         element.elUjemn = 2.5;
         this.elements.push(element);
@@ -206,8 +204,8 @@ class TableChemia {
         element.symbol = "Cl";
         element.number = 17;
         element.Ar = 35.5;
-        element.numberofgroup = 7;
-        element.numberofperiod = 3;
+        element.group = 17;
+        element.period = 3;
         element.metal = this.nemetal;
         element.elUjemn = 3.0;
         this.elements.push(element);
@@ -217,8 +215,8 @@ class TableChemia {
         element.symbol = "Ar";
         element.number = 18;
         element.Ar = 40;
-        element.numberofgroup = 8;
-        element.numberofperiod = 3;
+        element.group = 18;
+        element.period = 3;
         element.metal = this.nemetal;
         element.elUjemn = 0;
         this.elements.push(element);
@@ -228,8 +226,8 @@ class TableChemia {
         element.symbol = "K";
         element.number = 19;
         element.Ar = 39;
-        element.numberofgroup = 1;
-        element.numberofperiod = 4;
+        element.group = 1;
+        element.period = 4;
         element.metal = this.metal;
         element.elUjemn = 0.9;
         this.elements.push(element);
@@ -239,8 +237,8 @@ class TableChemia {
         element.symbol = "Ca";
         element.number = 20;
         element.Ar = 40;
-        element.numberofgroup = 2;
-        element.numberofperiod = 4;
+        element.group = 2;
+        element.period = 4;
         element.metal = this.metal;
         element.elUjemn = 1.0;
         this.elements.push(element);
@@ -250,8 +248,8 @@ class TableChemia {
         element.symbol = "Sc";
         element.number = 21;
         element.Ar = 45;
-        element.numberofgroup = 3;
-        element.numberofperiod = 4;
+        element.group = 3;
+        element.period = 4;
         element.metal = this.metal;
         element.elUjemn = 1.3;
         this.elements.push(element);
@@ -261,8 +259,8 @@ class TableChemia {
         element.symbol = "Ti";
         element.number = 22;
         element.Ar = 48;
-        element.numberofgroup = 4;
-        element.numberofperiod = 4;
+        element.group = 4;
+        element.period = 4;
         element.metal = this.metal;
         element.elUjemn = 1.5;
         this.elements.push(element);
@@ -272,8 +270,8 @@ class TableChemia {
         element.symbol = "V";
         element.number = 23;
         element.Ar = 51;
-        element.numberofgroup = 5;
-        element.numberofperiod = 4;
+        element.group = 5;
+        element.period = 4;
         element.metal = this.metal;
         element.elUjemn = 1.7;
         this.elements.push(element);
@@ -283,8 +281,8 @@ class TableChemia {
         element.symbol = "Cr";
         element.number = 24;
         element.Ar = 52;
-        element.numberofgroup = 6;
-        element.numberofperiod = 4;
+        element.group = 6;
+        element.period = 4;
         element.metal = this.metal;
         element.elUjemn = 1.9;
         this.elements.push(element);
@@ -294,8 +292,8 @@ class TableChemia {
         element.symbol = "Mn";
         element.number = 25;
         element.Ar = 55;
-        element.numberofgroup = 7;
-        element.numberofperiod = 4;
+        element.group = 7;
+        element.period = 4;
         element.metal = this.metal;
         element.elUjemn = 1.7;
         this.elements.push(element);
@@ -305,8 +303,8 @@ class TableChemia {
         element.symbol = "Fe";
         element.number = 26;
         element.Ar = 56;
-        element.numberofgroup = 8;
-        element.numberofperiod = 4;
+        element.group = 8;
+        element.period = 4;
         element.metal = this.metal;
         element.elUjemn = 1.9;
         this.elements.push(element);
@@ -316,8 +314,8 @@ class TableChemia {
         element.symbol = "Co";
         element.number = 27;
         element.Ar = 59;
-        element.numberofgroup = 8;
-        element.numberofperiod = 4;
+        element.group = 9;
+        element.period = 4;
         element.metal = this.metal;
         element.elUjemn = 2.0;
         this.elements.push(element);
@@ -327,8 +325,8 @@ class TableChemia {
         element.symbol = "Ni";
         element.number = 28;
         element.Ar = 59;
-        element.numberofgroup = 8;
-        element.numberofperiod = 4;
+        element.group = 10;
+        element.period = 4;
         element.metal = this.metal;
         element.elUjemn = 2.0;
         this.elements.push(element);
@@ -338,8 +336,8 @@ class TableChemia {
         element.symbol = "Cu";
         element.number = 29;
         element.Ar = 64;
-        element.numberofgroup = 1;
-        element.numberofperiod = 4;
+        element.group = 11;
+        element.period = 4;
         element.metal = this.metal;
         element.elUjemn = 1.9;
         this.elements.push(element);
@@ -349,8 +347,8 @@ class TableChemia {
         element.symbol = "Zn";
         element.number = 30;
         element.Ar = 65;
-        element.numberofgroup = 2;
-        element.numberofperiod = 4;
+        element.group = 12;
+        element.period = 4;
         element.metal = this.metal;
         element.elUjemn = 1.6;
         this.elements.push(element);
@@ -360,8 +358,8 @@ class TableChemia {
         element.symbol = "Ga";
         element.number = 31;
         element.Ar = 70;
-        element.numberofgroup = 3;
-        element.numberofperiod = 4;
+        element.group = 13;
+        element.period = 4;
         element.metal = this.metal;
         element.elUjemn = 1.6;
         this.elements.push(element);
@@ -371,8 +369,8 @@ class TableChemia {
         element.symbol = "Ge";
         element.number = 32;
         element.Ar = 73;
-        element.numberofgroup = 4;
-        element.numberofperiod = 4;
+        element.group = 14;
+        element.period = 4;
         element.metal = this.metal;
         element.elUjemn = 1.8;
         this.elements.push(element);
@@ -382,8 +380,8 @@ class TableChemia {
         element.symbol = "As";
         element.number = 33;
         element.Ar = 75;
-        element.numberofgroup = 5;
-        element.numberofperiod = 4;
+        element.group = 15;
+        element.period = 4;
         element.metal = this.nemetal;
         element.elUjemn = 2.0;
         this.elements.push(element);
@@ -393,8 +391,8 @@ class TableChemia {
         element.symbol = "Se";
         element.number = 34;
         element.Ar = 79;
-        element.numberofgroup = 6;
-        element.numberofperiod = 4;
+        element.group = 16;
+        element.period = 4;
         element.metal = this.nemetal;
         element.elUjemn = 2.4;
         this.elements.push(element);
@@ -404,8 +402,8 @@ class TableChemia {
         element.symbol = "Br";
         element.number = 35;
         element.Ar = 80;
-        element.numberofgroup = 7;
-        element.numberofperiod = 4;
+        element.group = 17;
+        element.period = 4;
         element.metal = this.nemetal;
         element.elUjemn = 2.8;
         this.elements.push(element);
@@ -415,8 +413,8 @@ class TableChemia {
         element.symbol = "Kr";
         element.number = 36;
         element.Ar = 84;
-        element.numberofgroup = 8;
-        element.numberofperiod = 4;
+        element.group = 18;
+        element.period = 4;
         element.metal = this.nemetal;
         element.elUjemn = 0;
         this.elements.push(element);
@@ -426,8 +424,8 @@ class TableChemia {
         element.symbol = "Rb";
         element.number = 37;
         element.Ar = 85;
-        element.numberofgroup = 1;
-        element.numberofperiod = 5;
+        element.group = 1;
+        element.period = 5;
         element.metal = this.metal;
         element.elUjemn = 0.8;
         this.elements.push(element);
@@ -437,8 +435,8 @@ class TableChemia {
         element.symbol = "Sr";
         element.number = 38;
         element.Ar = 88;
-        element.numberofgroup = 2;
-        element.numberofperiod = 5;
+        element.group = 2;
+        element.period = 5;
         element.metal = this.metal;
         element.elUjemn = 1.0;
         this.elements.push(element);
@@ -448,8 +446,8 @@ class TableChemia {
         element.symbol = "Y";
         element.number = 39;
         element.Ar = 89;
-        element.numberofgroup = 3;
-        element.numberofperiod = 5;
+        element.group = 3;
+        element.period = 5;
         element.metal = this.metal;
         element.elUjemn = 1.3;
         this.elements.push(element);
@@ -459,8 +457,8 @@ class TableChemia {
         element.symbol = "Zr";
         element.number = 40;
         element.Ar = 91;
-        element.numberofgroup = 4;
-        element.numberofperiod = 5;
+        element.group = 4;
+        element.period = 5;
         element.metal = this.metal;
         element.elUjemn = 1.4;
         this.elements.push(element);
@@ -470,8 +468,8 @@ class TableChemia {
         element.symbol = "Nb";
         element.number = 41;
         element.Ar = 93;
-        element.numberofgroup = 5;
-        element.numberofperiod = 5;
+        element.group = 5;
+        element.period = 5;
         element.metal = this.metal;
         element.elUjemn = 1.6;
         this.elements.push(element);
@@ -481,8 +479,8 @@ class TableChemia {
         element.symbol = "Mo";
         element.number = 42;
         element.Ar = 96;
-        element.numberofgroup = 6;
-        element.numberofperiod = 5;
+        element.group = 6;
+        element.period = 5;
         element.metal = this.metal;
         element.elUjemn = 2.0;
         this.elements.push(element);
@@ -492,8 +490,8 @@ class TableChemia {
         element.symbol = "Tc";
         element.number = 43;
         element.Ar = 98;
-        element.numberofgroup = 7;
-        element.numberofperiod = 5;
+        element.group = 7;
+        element.period = 5;
         element.metal = this.metal;
         element.elUjemn = 1.9;
         this.elements.push(element);
@@ -503,8 +501,8 @@ class TableChemia {
         element.symbol = "Ru";
         element.number = 44;
         element.Ar = 101;
-        element.numberofgroup = 8;
-        element.numberofperiod = 5;
+        element.group = 8;
+        element.period = 5;
         element.metal = this.metal;
         element.elUjemn = 2.2;
         this.elements.push(element);
@@ -514,8 +512,8 @@ class TableChemia {
         element.symbol = "Rh";
         element.number = 45;
         element.Ar = 103;
-        element.numberofgroup = 8;
-        element.numberofperiod = 5;
+        element.group = 9;
+        element.period = 5;
         element.metal = this.metal;
         element.elUjemn = 2.2;
         this.elements.push(element);
@@ -525,8 +523,8 @@ class TableChemia {
         element.symbol = "Pd";
         element.number = 46;
         element.Ar = 107;
-        element.numberofgroup = 8;
-        element.numberofperiod = 5;
+        element.group = 10;
+        element.period = 5;
         element.metal = this.metal;
         element.elUjemn = 2.2;
         this.elements.push(element);
@@ -536,8 +534,8 @@ class TableChemia {
         element.symbol = "Ag";
         element.number = 47;
         element.Ar = 108;
-        element.numberofgroup = 1;
-        element.numberofperiod = 5;
+        element.group = 11;
+        element.period = 5;
         element.metal = this.metal;
         element.elUjemn = 1.9;
         this.elements.push(element);
@@ -547,8 +545,8 @@ class TableChemia {
         element.symbol = "Cd";
         element.number = 48;
         element.Ar = 112;
-        element.numberofgroup = 2;
-        element.numberofperiod = 5;
+        element.group = 12;
+        element.period = 5;
         element.metal = this.metal;
         element.elUjemn = 1.7;
         this.elements.push(element);
@@ -558,8 +556,8 @@ class TableChemia {
         element.symbol = "In";
         element.number = 49;
         element.Ar = 115;
-        element.numberofgroup = 3;
-        element.numberofperiod = 5;
+        element.group = 13;
+        element.period = 5;
         element.metal = this.metal;
         element.elUjemn = 1.7;
         this.elements.push(element);
@@ -569,8 +567,8 @@ class TableChemia {
         element.symbol = "Sn";
         element.number = 50;
         element.Ar = 119;
-        element.numberofgroup = 4;
-        element.numberofperiod = 5;
+        element.group = 14;
+        element.period = 5;
         element.metal = this.metal;
         element.elUjemn = 1.8;
         this.elements.push(element);
@@ -580,8 +578,8 @@ class TableChemia {
         element.symbol = "Sb";
         element.number = 51;
         element.Ar = 122;
-        element.numberofgroup = 5;
-        element.numberofperiod = 5;
+        element.group = 15;
+        element.period = 5;
         element.metal = this.nemetal;
         element.elUjemn = 1.9;
         this.elements.push(element);
@@ -591,8 +589,8 @@ class TableChemia {
         element.symbol = "Te";
         element.number = 52;
         element.Ar = 128;
-        element.numberofgroup = 6;
-        element.numberofperiod = 5;
+        element.group = 16;
+        element.period = 5;
         element.metal = this.nemetal;
         element.elUjemn = 2.1;
         this.elements.push(element);
@@ -602,8 +600,8 @@ class TableChemia {
         element.symbol = "I";
         element.number = 53;
         element.Ar = 127;
-        element.numberofgroup = 7;
-        element.numberofperiod = 5;
+        element.group = 17;
+        element.period = 5;
         element.metal = this.nemetal;
         element.elUjemn = 2.5;
         this.elements.push(element);
@@ -613,8 +611,8 @@ class TableChemia {
         element.symbol = "Xe";
         element.number = 54;
         element.Ar = 131;
-        element.numberofgroup = 8;
-        element.numberofperiod = 5;
+        element.group = 18;
+        element.period = 5;
         element.metal = this.nemetal;
         element.elUjemn = 0;
         this.elements.push(element);
@@ -624,8 +622,8 @@ class TableChemia {
         element.symbol = "Cs";
         element.number = 55;
         element.Ar = 133;
-        element.numberofgroup = 1;
-        element.numberofperiod = 6;
+        element.group = 1;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 0.7;
         this.elements.push(element);
@@ -635,8 +633,8 @@ class TableChemia {
         element.symbol = "Ba";
         element.number = 56;
         element.Ar = 137;
-        element.numberofgroup = 2;
-        element.numberofperiod = 6;
+        element.group = 2;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 0.9;
         this.elements.push(element);
@@ -646,8 +644,8 @@ class TableChemia {
         element.symbol = "La";
         element.number = 57;
         element.Ar = 139;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 3;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.1;
         this.elements.push(element);
@@ -657,8 +655,8 @@ class TableChemia {
         element.symbol = "Ce";
         element.number = 58;
         element.Ar = 140;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 3;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.1;
         this.elements.push(element);
@@ -668,8 +666,8 @@ class TableChemia {
         element.symbol = "Pr";
         element.number = 59;
         element.Ar = 141;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 3;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.1;
         this.elements.push(element);
@@ -679,8 +677,8 @@ class TableChemia {
         element.symbol = "Nd";
         element.number = 60;
         element.Ar = 144;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 3;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.2;
         this.elements.push(element);
@@ -690,8 +688,8 @@ class TableChemia {
         element.symbol = "Pm";
         element.number = 61;
         element.Ar = 145;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 3;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.2;
         this.elements.push(element);
@@ -701,8 +699,8 @@ class TableChemia {
         element.symbol = "Sm";
         element.number = 62;
         element.Ar = 150;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 3;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.2;
         this.elements.push(element);
@@ -712,8 +710,8 @@ class TableChemia {
         element.symbol = "Eu";
         element.number = 63;
         element.Ar = 152;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 3;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.0;
         this.elements.push(element);
@@ -723,8 +721,8 @@ class TableChemia {
         element.symbol = "Gd";
         element.number = 64;
         element.Ar = 157;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 3;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.1;
         this.elements.push(element);
@@ -734,8 +732,8 @@ class TableChemia {
         element.symbol = "Tb";
         element.number = 65;
         element.Ar = 159;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 3;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.2;
         this.elements.push(element);
@@ -745,8 +743,8 @@ class TableChemia {
         element.symbol = "Dy";
         element.number = 66;
         element.Ar = 163;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 3;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.2;
         this.elements.push(element);
@@ -756,8 +754,8 @@ class TableChemia {
         element.symbol = "Ho";
         element.number = 67;
         element.Ar = 165;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 3;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.2;
         this.elements.push(element);
@@ -767,8 +765,8 @@ class TableChemia {
         element.symbol = "Er";
         element.number = 68;
         element.Ar = 167;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 3;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.2;
         this.elements.push(element);
@@ -778,8 +776,8 @@ class TableChemia {
         element.symbol = "Tm";
         element.number = 69;
         element.Ar = 169;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 3;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.2;
         this.elements.push(element);
@@ -789,8 +787,8 @@ class TableChemia {
         element.symbol = "Yb";
         element.number = 70;
         element.Ar = 173;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 3;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.1;
         this.elements.push(element);
@@ -800,8 +798,8 @@ class TableChemia {
         element.symbol = "Lu";
         element.number = 71;
         element.Ar = 175;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 3;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.2;
         this.elements.push(element);
@@ -811,8 +809,8 @@ class TableChemia {
         element.symbol = "Hf";
         element.number = 72;
         element.Ar = 178;
-        element.numberofgroup = 4;
-        element.numberofperiod = 6;
+        element.group = 4;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.3;
         this.elements.push(element);
@@ -822,8 +820,8 @@ class TableChemia {
         element.symbol = "Ta";
         element.number = 73;
         element.Ar = 181;
-        element.numberofgroup = 5;
-        element.numberofperiod = 6;
+        element.group = 5;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.5;
         this.elements.push(element);
@@ -833,8 +831,8 @@ class TableChemia {
         element.symbol = "W";
         element.number = 74;
         element.Ar = 184;
-        element.numberofgroup = 6;
-        element.numberofperiod = 6;
+        element.group = 6;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 2.0;
         this.elements.push(element);
@@ -844,8 +842,8 @@ class TableChemia {
         element.symbol = "Re";
         element.number = 75;
         element.Ar = 186;
-        element.numberofgroup = 7;
-        element.numberofperiod = 6;
+        element.group = 7;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.9;
         this.elements.push(element);
@@ -855,8 +853,8 @@ class TableChemia {
         element.symbol = "Os";
         element.number = 76;
         element.Ar = 190;
-        element.numberofgroup = 8;
-        element.numberofperiod = 6;
+        element.group = 8;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 2.2;
         this.elements.push(element);
@@ -866,8 +864,8 @@ class TableChemia {
         element.symbol = "Ir";
         element.number = 77;
         element.Ar = 192;
-        element.numberofgroup = 8;
-        element.numberofperiod = 6;
+        element.group = 9;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 2.2;
         this.elements.push(element);
@@ -877,8 +875,8 @@ class TableChemia {
         element.symbol = "Pt";
         element.number = 78;
         element.Ar = 195;
-        element.numberofgroup = 8;
-        element.numberofperiod = 6;
+        element.group = 10;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 2.2;
         this.elements.push(element);
@@ -888,8 +886,8 @@ class TableChemia {
         element.symbol = "Au";
         element.number = 79;
         element.Ar = 197;
-        element.numberofgroup = 1;
-        element.numberofperiod = 6;
+        element.group = 11;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 2.4;
         this.elements.push(element);
@@ -899,8 +897,8 @@ class TableChemia {
         element.symbol = "Hg";
         element.number = 80;
         element.Ar = 201;
-        element.numberofgroup = 2;
-        element.numberofperiod = 6;
+        element.group = 12;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.9;
         this.elements.push(element);
@@ -910,8 +908,8 @@ class TableChemia {
         element.symbol = "Tl";
         element.number = 81;
         element.Ar = 204;
-        element.numberofgroup = 3;
-        element.numberofperiod = 6;
+        element.group = 13;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.8;
         this.elements.push(element);
@@ -921,8 +919,8 @@ class TableChemia {
         element.symbol = "Pb";
         element.number = 82;
         element.Ar = 207;
-        element.numberofgroup = 4;
-        element.numberofperiod = 6;
+        element.group = 14;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.8;
         this.elements.push(element);
@@ -932,8 +930,8 @@ class TableChemia {
         element.symbol = "Bi";
         element.number = 83;
         element.Ar = 209;
-        element.numberofgroup = 5;
-        element.numberofperiod = 6;
+        element.group = 15;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 1.9;
         this.elements.push(element);
@@ -943,8 +941,8 @@ class TableChemia {
         element.symbol = "Po";
         element.number = 84;
         element.Ar = 209;
-        element.numberofgroup = 6;
-        element.numberofperiod = 6;
+        element.group = 16;
+        element.period = 6;
         element.metal = this.metal;
         element.elUjemn = 2.0;
         this.elements.push(element);
@@ -954,8 +952,8 @@ class TableChemia {
         element.symbol = "At";
         element.number = 85;
         element.Ar = 210;
-        element.numberofgroup = 7;
-        element.numberofperiod = 6;
+        element.group = 17;
+        element.period = 6;
         element.metal = this.nemetal;
         element.elUjemn = 2.2;
         this.elements.push(element);
@@ -965,8 +963,8 @@ class TableChemia {
         element.symbol = "Rn";
         element.number = 86;
         element.Ar = 222;
-        element.numberofgroup = 8;
-        element.numberofperiod = 6;
+        element.group = 18;
+        element.period = 6;
         element.metal = this.nemetal;
         element.elUjemn = 0;
         this.elements.push(element);
@@ -976,8 +974,8 @@ class TableChemia {
         element.symbol = "Fr";
         element.number = 87;
         element.Ar = 223;
-        element.numberofgroup = 1;
-        element.numberofperiod = 7;
+        element.group = 1;
+        element.period = 7;
         element.metal = this.metal;
         element.elUjemn = 0.7;
         this.elements.push(element);
@@ -987,8 +985,8 @@ class TableChemia {
         element.symbol = "Ra";
         element.number = 88;
         element.Ar = 226;
-        element.numberofgroup = 2;
-        element.numberofperiod = 7;
+        element.group = 2;
+        element.period = 7;
         element.metal = this.metal;
         element.elUjemn = 0.9;
         this.elements.push(element);
@@ -998,8 +996,8 @@ class TableChemia {
         element.symbol = "Ac";
         element.number = 89;
         element.Ar = 227;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 3;
+        element.period = 7;
         element.metal = this.metal;
         element.elUjemn = 1.1;
         this.elements.push(element);
@@ -1009,8 +1007,8 @@ class TableChemia {
         element.symbol = "Th";
         element.number = 90;
         element.Ar = 232;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 3;
+        element.period = 7;
         element.metal = this.metal;
         element.elUjemn = 1.3;
         this.elements.push(element);
@@ -1020,8 +1018,8 @@ class TableChemia {
         element.symbol = "Pa";
         element.number = 91;
         element.Ar = 231;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 3;
+        element.period = 7;
         element.metal = this.metal;
         element.elUjemn = 1.5;
         this.elements.push(element);
@@ -1031,8 +1029,8 @@ class TableChemia {
         element.symbol = "U";
         element.number = 92;
         element.Ar = 238;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 3;
+        element.period = 7;
         element.metal = this.metal;
         element.elUjemn = 1.7;
         this.elements.push(element);
@@ -1042,19 +1040,19 @@ class TableChemia {
         element.symbol = "Np";
         element.number = 93;
         element.Ar = 237;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 3;
+        element.period = 7;
         element.metal = this.metal;
         element.elUjemn = 1.4;
         this.elements.push(element);
 
         element = new Element();
         element.name = "Pluton";
-        element.symbol = "Pl";
+        element.symbol = "Pu";
         element.number = 94;
         element.Ar = 244;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 3;
+        element.period = 7;
         element.metal = this.metal;
         element.elUjemn = 1.3;
         this.elements.push(element);
@@ -1064,8 +1062,8 @@ class TableChemia {
         element.symbol = "Am";
         element.number = 95;
         element.Ar = 243;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 3;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1074,8 +1072,8 @@ class TableChemia {
         element.symbol = "Cm";
         element.number = 96;
         element.Ar = 247;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 3;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1084,8 +1082,8 @@ class TableChemia {
         element.symbol = "Bk";
         element.number = 97;
         element.Ar = 247;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 3;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1094,8 +1092,8 @@ class TableChemia {
         element.symbol = "Cf";
         element.number = 98;
         element.Ar = 251;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 3;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1104,8 +1102,8 @@ class TableChemia {
         element.symbol = "Es";
         element.number = 99;
         element.Ar = 252;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 3;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1114,8 +1112,8 @@ class TableChemia {
         element.symbol = "Fm";
         element.number = 100;
         element.Ar = 257;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 3;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1124,8 +1122,8 @@ class TableChemia {
         element.symbol = "Md";
         element.number = 101;
         element.Ar = 258;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 3;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1134,8 +1132,8 @@ class TableChemia {
         element.symbol = "Nb";
         element.number = 102;
         element.Ar = 259;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 3;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1144,8 +1142,8 @@ class TableChemia {
         element.symbol = "Lr";
         element.number = 103;
         element.Ar = 262;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 3;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1154,8 +1152,8 @@ class TableChemia {
         element.symbol = "Rf";
         element.number = 104;
         element.Ar = 267;
-        element.numberofgroup = 4;
-        element.numberofperiod = 7;
+        element.group = 4;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1164,8 +1162,8 @@ class TableChemia {
         element.symbol = "Db";
         element.number = 105;
         element.Ar = 268;
-        element.numberofgroup = 5;
-        element.numberofperiod = 7;
+        element.group = 5;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1174,8 +1172,8 @@ class TableChemia {
         element.symbol = "Sg";
         element.number = 106;
         element.Ar = 271;
-        element.numberofgroup = 6;
-        element.numberofperiod = 7;
+        element.group = 6;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1184,8 +1182,8 @@ class TableChemia {
         element.symbol = "Bh";
         element.number = 107;
         element.Ar = 270;
-        element.numberofgroup = 7;
-        element.numberofperiod = 7;
+        element.group = 7;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1194,8 +1192,8 @@ class TableChemia {
         element.symbol = "Hs";
         element.number = 108;
         element.Ar = 277;
-        element.numberofgroup = 8;
-        element.numberofperiod = 7;
+        element.group = 8;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1204,8 +1202,8 @@ class TableChemia {
         element.symbol = "Mt";
         element.number = 109;
         element.Ar = 278;
-        element.numberofgroup = 8;
-        element.numberofperiod = 7;
+        element.group = 9;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1214,8 +1212,8 @@ class TableChemia {
         element.symbol = "Ds";
         element.number = 110;
         element.Ar = 281;
-        element.numberofgroup = 8;
-        element.numberofperiod = 7;
+        element.group = 10;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1224,8 +1222,8 @@ class TableChemia {
         element.symbol = "Rg";
         element.number = 111;
         element.Ar = 281;
-        element.numberofgroup = 1;
-        element.numberofperiod = 7;
+        element.group = 11;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1234,8 +1232,8 @@ class TableChemia {
         element.symbol = "Cn";
         element.number = 112;
         element.Ar = 285;
-        element.numberofgroup = 2;
-        element.numberofperiod = 7;
+        element.group = 12;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1244,8 +1242,8 @@ class TableChemia {
         element.symbol = "Nh";
         element.number = 113;
         element.Ar = 286;
-        element.numberofgroup = 3;
-        element.numberofperiod = 7;
+        element.group = 13;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1254,8 +1252,8 @@ class TableChemia {
         element.symbol = "Fl";
         element.number = 114;
         element.Ar = 289;
-        element.numberofgroup = 4;
-        element.numberofperiod = 7;
+        element.group = 14;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1264,8 +1262,8 @@ class TableChemia {
         element.symbol = "Mc";
         element.number = 115;
         element.Ar = 288;
-        element.numberofgroup = 5;
-        element.numberofperiod = 7;
+        element.group = 15;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1274,8 +1272,8 @@ class TableChemia {
         element.symbol = "Lv";
         element.number = 116;
         element.Ar = 293;
-        element.numberofgroup = 6;
-        element.numberofperiod = 7;
+        element.group = 16;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1284,8 +1282,8 @@ class TableChemia {
         element.symbol = "Ts";
         element.number = 117;
         element.Ar = 293;
-        element.numberofgroup = 7;
-        element.numberofperiod = 7;
+        element.group = 17;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
 
@@ -1294,17 +1292,16 @@ class TableChemia {
         element.symbol = "Og";
         element.number = 118;
         element.Ar = 294;
-        element.numberofgroup = 8;
-        element.numberofperiod = 7;
+        element.group = 18;
+        element.period = 7;
         element.metal = this.metal;
         this.elements.push(element);
     }
     
     Valetnost()
     {
-        this.elements[0].Valetnost = [2];
+        this.elements[0].Valetnost = [1];
         this.elements[0].Valetnost[0] = 1;
-        this.elements[0].Valetnost[1] = -1;
 
         this.elements[1].Valetnost = [1];
         this.elements[1].Valetnost[0] = 0;
@@ -1315,30 +1312,25 @@ class TableChemia {
         this.elements[3].Valetnost = [1];
         this.elements[3].Valetnost[0] = 2;
 
-        this.elements[4].Valetnost = [2];
+        this.elements[4].Valetnost = [1];
         this.elements[4].Valetnost[0] = 3;
-        this.elements[4].Valetnost[1] = -3;
 
         this.elements[5].Valetnost = [2];
         this.elements[5].Valetnost[0] = 2;
         this.elements[5].Valetnost[1] = 4;
 
-        this.elements[6].Valetnost = [8];
-        this.elements[6].Valetnost[0] = -3;
-        this.elements[6].Valetnost[1] = -2;
-        this.elements[6].Valetnost[2] = -1;
-        this.elements[6].Valetnost[3] = 1;
-        this.elements[6].Valetnost[4] = 2;
-        this.elements[6].Valetnost[5] = 3;
-        this.elements[6].Valetnost[6] = 4;
-        this.elements[6].Valetnost[7] = 5;
+        this.elements[6].Valetnost = [5];
+        this.elements[6].Valetnost[0] = 1;
+        this.elements[6].Valetnost[1] = 2;
+        this.elements[6].Valetnost[2] = 3;
+        this.elements[6].Valetnost[3] = 4;
+        this.elements[6].Valetnost[4] = 5;
 
         this.elements[7].Valetnost = [1];
-        this.elements[7].Valetnost[0] = -2;
+        this.elements[7].Valetnost[0] = 2;
 
-        this.elements[8].Valetnost = [2];
-        this.elements[8].Valetnost[0] = -1;
-        this.elements[8].Valetnost[1] = 1;
+        this.elements[8].Valetnost = [1];
+        this.elements[8].Valetnost[0] = 1;
 
         this.elements[9].Valetnost = [1];
         this.elements[9].Valetnost[0] = 0;
@@ -1352,31 +1344,27 @@ class TableChemia {
         this.elements[12].Valetnost = [1];
         this.elements[12].Valetnost[0] = 3;
 
-        this.elements[13].Valetnost = [3];
-        this.elements[13].Valetnost[0] = -4;
-        this.elements[13].Valetnost[1] = 2;
-        this.elements[13].Valetnost[2] = 4;
+        this.elements[13].Valetnost = [2];
+        this.elements[13].Valetnost[0] = 2;
+        this.elements[13].Valetnost[1] = 4;
 
-        this.elements[14].Valetnost = [4];
-        this.elements[14].Valetnost[0] = -3;
-        this.elements[14].Valetnost[1] = 1;
-        this.elements[14].Valetnost[2] = 3;
+        this.elements[14].Valetnost = [3];
+        this.elements[14].Valetnost[0] = 1;
+        this.elements[14].Valetnost[1] = 3;
         this.elements[14].Valetnost[2] = 5;
 
-        this.elements[15].Valetnost = [4];
-        this.elements[15].Valetnost[0] = -2;
-        this.elements[15].Valetnost[1] = 2;
-        this.elements[15].Valetnost[2] = 4;
+        this.elements[15].Valetnost = [3];
+        this.elements[15].Valetnost[0] = 2;
+        this.elements[15].Valetnost[1] = 4;
         this.elements[15].Valetnost[2] = 6;
 
-        this.elements[16].Valetnost = [7];
-        this.elements[16].Valetnost[0] = -1;
-        this.elements[16].Valetnost[1] = 1;
-        this.elements[16].Valetnost[2] = 2;
-        this.elements[16].Valetnost[3] = 3;
-        this.elements[16].Valetnost[4] = 4;
-        this.elements[16].Valetnost[5] = 5;
-        this.elements[16].Valetnost[6] = 7;
+        this.elements[16].Valetnost = [6];
+        this.elements[16].Valetnost[0] = 1;
+        this.elements[16].Valetnost[1] = 2;
+        this.elements[16].Valetnost[2] = 3;
+        this.elements[16].Valetnost[3] = 4;
+        this.elements[16].Valetnost[4] = 5;
+        this.elements[16].Valetnost[5] = 7;
 
         this.elements[17].Valetnost = [1];
         this.elements[17].Valetnost[0] = 0;
@@ -1442,29 +1430,25 @@ class TableChemia {
         this.elements[30].Valetnost[0] = 3;
         this.elements[30].Valetnost[1] = 2;
 
-        this.elements[31].Valetnost = [3];
-        this.elements[31].Valetnost[0] = -4;
-        this.elements[31].Valetnost[1] = 2;
-        this.elements[31].Valetnost[2] = 4;
+        this.elements[31].Valetnost = [2];
+        this.elements[31].Valetnost[0] = 2;
+        this.elements[31].Valetnost[1] = 4;
 
-        this.elements[32].Valetnost = [4];
-        this.elements[32].Valetnost[0] = -3;
-        this.elements[32].Valetnost[1] = 2;
-        this.elements[32].Valetnost[2] = 3;
-        this.elements[32].Valetnost[3] = 5;
+        this.elements[32].Valetnost = [3];
+        this.elements[32].Valetnost[0] = 2;
+        this.elements[32].Valetnost[1] = 3;
+        this.elements[32].Valetnost[2] = 5;
 
-        this.elements[33].Valetnost = [4];
-        this.elements[33].Valetnost[0] = -2;
-        this.elements[33].Valetnost[1] = 2;
-        this.elements[33].Valetnost[2] = 4;
-        this.elements[33].Valetnost[3] = 6;
+        this.elements[33].Valetnost = [3];
+        this.elements[33].Valetnost[0] = 2;
+        this.elements[33].Valetnost[1] = 4;
+        this.elements[33].Valetnost[2] = 6;
 
-        this.elements[34].Valetnost = [5];
-        this.elements[34].Valetnost[0] = -1;
-        this.elements[34].Valetnost[1] = 1;
-        this.elements[34].Valetnost[2] = 3;
-        this.elements[34].Valetnost[3] = 4;
-        this.elements[34].Valetnost[4] = 5;
+        this.elements[34].Valetnost = [4];
+        this.elements[34].Valetnost[0] = 1;
+        this.elements[34].Valetnost[1] = 3;
+        this.elements[34].Valetnost[2] = 4;
+        this.elements[34].Valetnost[3] = 5;
 
         this.elements[35].Valetnost = [1];
         this.elements[35].Valetnost[0] = 0;
@@ -1536,25 +1520,22 @@ class TableChemia {
         this.elements[49].Valetnost[0] = 2;
         this.elements[49].Valetnost[1] = 4;
 
-        this.elements[50].Valetnost = [4];
-        this.elements[50].Valetnost[0] = -3;
-        this.elements[50].Valetnost[1] = 3;
-        this.elements[50].Valetnost[2] = 4;
-        this.elements[50].Valetnost[3] = 5;
+        this.elements[50].Valetnost = [3];
+        this.elements[50].Valetnost[0] = 3;
+        this.elements[50].Valetnost[1] = 4;
+        this.elements[50].Valetnost[2] = 5;
 
-        this.elements[51].Valetnost = [4];
-        this.elements[51].Valetnost[0] = -2;
-        this.elements[51].Valetnost[1] = 2;
-        this.elements[51].Valetnost[2] = 4;
-        this.elements[51].Valetnost[3] = 6;
+        this.elements[51].Valetnost = [3];
+        this.elements[51].Valetnost[0] = 2;
+        this.elements[51].Valetnost[1] = 4;
+        this.elements[51].Valetnost[2] = 6;
 
-        this.elements[52].Valetnost = [6];
-        this.elements[52].Valetnost[0] = -1;
-        this.elements[52].Valetnost[1] = 1;
-        this.elements[52].Valetnost[2] = 3;
-        this.elements[52].Valetnost[3] = 4;
-        this.elements[52].Valetnost[4] = 5;
-        this.elements[52].Valetnost[5] = 7;
+        this.elements[52].Valetnost = [5];
+        this.elements[52].Valetnost[0] = 1;
+        this.elements[52].Valetnost[1] = 3;
+        this.elements[52].Valetnost[2] = 4;
+        this.elements[52].Valetnost[3] = 5;
+        this.elements[52].Valetnost[4] = 7;
 
         this.elements[53].Valetnost = [1];
         this.elements[53].Valetnost[0] = 0;
@@ -1616,7 +1597,6 @@ class TableChemia {
         this.elements[70].Valetnost = [1];
         this.elements[70].Valetnost[0] = 3;
 
-// ---------------------------------------------------------------------------------
         this.elements[71].Valetnost = [1];
         this.elements[71].Valetnost[0] = 4;
 
@@ -1632,15 +1612,14 @@ class TableChemia {
         this.elements[73].Valetnost[3] = 5;
         this.elements[73].Valetnost[4] = 6;
 
-        this.elements[74].Valetnost = [8];
-        this.elements[74].Valetnost[0] = -1;
-        this.elements[74].Valetnost[1] = 1;
-        this.elements[74].Valetnost[2] = 2;
-        this.elements[74].Valetnost[3] = 3;
-        this.elements[74].Valetnost[4] = 4;
-        this.elements[74].Valetnost[5] = 5;
-        this.elements[74].Valetnost[6] = 6;
-        this.elements[74].Valetnost[7] = 7;
+        this.elements[74].Valetnost = [7];
+        this.elements[74].Valetnost[0] = 1;
+        this.elements[74].Valetnost[1] = 2;
+        this.elements[74].Valetnost[2] = 3;
+        this.elements[74].Valetnost[3] = 4;
+        this.elements[74].Valetnost[4] = 5;
+        this.elements[74].Valetnost[5] = 6;
+        this.elements[74].Valetnost[6] = 7;
 
         this.elements[75].Valetnost = [5];
         this.elements[75].Valetnost[0] = 2;
@@ -1681,18 +1660,16 @@ class TableChemia {
         this.elements[81].Valetnost[0] = 2;
         this.elements[81].Valetnost[1] = 4;
 
-        this.elements[82].Valetnost = [5];
-        this.elements[82].Valetnost[0] = -3;
-        this.elements[82].Valetnost[1] = 2;
-        this.elements[82].Valetnost[2] = 3;
-        this.elements[82].Valetnost[3] = 4;
-        this.elements[82].Valetnost[4] = 5;
+        this.elements[82].Valetnost = [4];
+        this.elements[82].Valetnost[0] = 2;
+        this.elements[82].Valetnost[1] = 3;
+        this.elements[82].Valetnost[2] = 4;
+        this.elements[82].Valetnost[3] = 5;
 
-        this.elements[83].Valetnost = [4];
-        this.elements[83].Valetnost[0] = -2;
-        this.elements[83].Valetnost[1] = 2;
-        this.elements[83].Valetnost[2] = 4;
-        this.elements[83].Valetnost[3] = 6;
+        this.elements[83].Valetnost = [3];
+        this.elements[83].Valetnost[0] = 2;
+        this.elements[83].Valetnost[1] = 4;
+        this.elements[83].Valetnost[2] = 6;
 
         this.elements[84].Valetnost = [4];
         this.elements[84].Valetnost[0] = 1;
@@ -1800,81 +1777,9 @@ class TableChemia {
             this.elements[i].Valetnost = [0];
     }
 
-    PeriodANDgroupANDName()
-    {
-        for (let i = 0; i < this.elements.length; i++)
-        {
-            if (this.elements[i].numberofgroup == 1)
-            {
-                if (this.elements[i].symbol == "Cu" || this.elements[i].symbol == "Ag" || this.elements[i].symbol == "Au" || this.elements[i].symbol == "Rg")
-                    this.elements[i].group = "B";
-                else
-                    this.elements[i].group = "A";
-            }
-            if (this.elements[i].numberofgroup == 2)
-            {
-                if (this.elements[i].symbol == "Zn" || this.elements[i].symbol == "Cd" || this.elements[i].symbol == "Hg" || this.elements[i].symbol == "Cn")
-                    this.elements[i].group = "B";
-                else
-                    this.elements[i].group = "A";
-            }
-            if (this.elements[i].numberofgroup == 3)
-            {
-                if (this.elements[i].symbol == "Sc" || this.elements[i].symbol == "Y" || this.elements[i].symbol == "La" || this.elements[i].symbol == "Ac")
-                    this.elements[i].group = "B";
-                else
-                    this.elements[i].group = "A";
-            }
-            if (this.elements[i].numberofgroup == 4)
-            {
-                if (this.elements[i].symbol == "Ti" || this.elements[i].symbol == "Zr" || this.elements[i].symbol == "Hf" || this.elements[i].symbol == "Rf")
-                    this.elements[i].group = "B";
-                else
-                    this.elements[i].group = "A";
-            }
-            if (this.elements[i].numberofgroup == 5)
-            {
-                if (this.elements[i].symbol == "V" || this.elements[i].symbol == "Nb" || this.elements[i].symbol == "Ta" || this.elements[i].symbol == "Da")
-                    this.elements[i].group = "B";
-                else
-                    this.elements[i].group = "A";
-            }
-            if (this.elements[i].numberofgroup == 6)
-            {
-                if (this.elements[i].symbol == "Cr" || this.elements[i].symbol == "Mo" || this.elements[i].symbol == "W" || this.elements[i].symbol == "Sg")
-                    this.elements[i].group = "B";
-                else
-                    this.elements[i].group = "A";
-            }
-            if (this.elements[i].numberofgroup == 7)
-            {
-                if (this.elements[i].symbol == "Mn" || this.elements[i].symbol == "Tc" || this.elements[i].symbol == "Re" || this.elements[i].symbol == "Bh")
-                    this.elements[i].group = "B";
-                else
-                    this.elements[i].group = "A";
-            }
-            if (this.elements[i].numberofgroup == 8)
-            {
-                if (this.elements[i].symbol == "Fe" || this.elements[i].symbol == "Co" || this.elements[i].symbol == "Ni" || this.elements[i].symbol == "Ru" || this.elements[i].symbol == "Rh" || this.elements[i].symbol == "Pd" || this.elements[i].symbol == "Os" || this.elements[i].symbol == "Ir" || this.elements[i].symbol == "Pt" || this.elements[i].symbol == "Hs" || this.elements[i].symbol == "Mt" || this.elements[i].symbol == "Ds")
-                    this.elements[i].group = "B";
-                else
-                    this.elements[i].group = "A";
-            }
-            if (this.elements[i].numberofperiod <= 3)
-                this.elements[i].period = "Small";
-        }
-
-        for (let i = 0; i < this.elements.length; i++)
-        {
-            if (this.elements[i].period != "Small")
-                this.elements[i].period = "Big";
-        }
-    }
-
     constructor()
     {
         this.Init();
-        this.PeriodANDgroupANDName();
         this.Valetnost();
         this.Graphics = [7, 5];
     }
@@ -2042,88 +1947,74 @@ class ResultTableChemia {
             if (this.table.elements[i].symbol.toString().toLowerCase() == this.Text.toString().toLowerCase() || 
                 this.table.elements[i].name.toString().toLowerCase() == this.Text.toString().toLowerCase()) {
                 this.table.currentElement = i;
-                this.ResultText += this.Styles.styleHeaderText("Cechy\n</span><br><br>");
+                this.ResultText += this.Styles.styleHeaderText("Cechy" + this.Styles.br());
                 this.ResultText +=  "Symbol atomu: " + this.Styles.styleAnswerBr(this.table.elements[i].symbol);
                 this.ResultText += "Nazwa atomu: " + this.Styles.styleAnswerBr(this.table.elements[i].name);
-                this.ResultText += "Numer sekwencji: " + this.Styles.styleAnswerBr(this.table.elements[i].number);
-                this.ResultText += "Ar: " + this.Styles.styleAnswerBr(this.table.elements[i].Ar);
+                this.ResultText += "Liczba atomowa: " + this.Styles.styleAnswerBr(this.table.elements[i].number);
+                this.ResultText += "Masa atomowa: " + this.Styles.styleAnswerBr(this.table.elements[i].Ar);
                 if (this.table.elements[i].elUjemn != undefined)
                     this.ResultText += "Liczba elektroujemności: " + this.Styles.styleAnswerBr(this.table.elements[i].elUjemn);
                 else
                     this.ResultText += "Liczba elektroujemności: " + " " + this.Styles.br();
                 this.ResultText += "Metal/niemetal: " + this.Styles.styleAnswerBr(this.table.elements[i].metal);
-                this.ResultText += "Grupa: " + this.Styles.styleAnswer(this.table.elements[i].numberofgroup);
-                if (this.table.elements[i].group == "B")
-                    this.ResultText += this.Styles.styleAnswerBr(" B");
-                else
-                    this.ResultText += this.Styles.styleAnswerBr(" A");
-                this.ResultText += "Okres: " + this.Styles.styleAnswer(this.table.elements[i].numberofperiod);
-    
-                if (this.table.elements[i].period == "Small")
-                    this.ResultText += this.Styles.styleAnswerBr(", mały");
-                else
-                    this.ResultText += this.Styles.styleAnswerBr(", duży");
-    
+                this.ResultText += "Grupa: " + this.Styles.styleAnswerBr(this.table.elements[i].group);
+                this.ResultText += "Okres: " + this.Styles.styleAnswerBr(this.table.elements[i].period);    
                 this.ResultText += "Liczba elektronów: " + this.Styles.styleAnswerBr(this.table.elements[i].number);
                 this.ResultText += "Liczba protonów: " + this.Styles.styleAnswerBr(this.table.elements[i].number);
                 this.ResultText += "Liczba neutronów: " + this.Styles.styleAnswerBr((parseInt(this.table.elements[i].Ar) - this.table.elements[i].number));
                 this.ResultText += "Wyższe tlenki: ";
     
-                if (this.table.elements[i].name != "Tlen")
+                if (this.table.elements[i].name != "Tlen" && this.table.elements[i].group != 9 && this.table.elements[i].group != 10)
                 {
                     this.ResultText += this.Styles.styleAnswer(this.table.elements[i].symbol);
-                    if (this.table.elements[i].numberofgroup == 1)
-                        this.ResultText += this.Styles.styleAnswerBr("2O");
-                    if (this.table.elements[i].numberofgroup == 2)
-                        this.ResultText += this.Styles.styleAnswerBr("O");
-                    if (this.table.elements[i].numberofgroup == 3)
+                    if (this.table.elements[i].group == 1 || this.table.elements[i].group == 11)
+                        this.ResultText += this.Styles.styleAnswerBr("<sub>2</sub>O");
+                    if (this.table.elements[i].group == 2 || this.table.elements[i].group == 12)
+                        this.ResultText += this.Styles.styleAnswerBr("O");11
+                    if (this.table.elements[i].group == 3 || this.table.elements[i].group == 13)
                         this.ResultText += this.Styles.styleAnswerBr("<sub>2</sub>O<sub>3</sub>");
-                    if (this.table.elements[i].numberofgroup == 4)
+                    if (this.table.elements[i].group == 4 || this.table.elements[i].group == 14)
                         this.ResultText += this.Styles.styleAnswerBr("O<sub>2</sub>");
-                    if (this.table.elements[i].numberofgroup == 5)
+                    if (this.table.elements[i].group == 5 || this.table.elements[i].group == 15)
                         this.ResultText += this.Styles.styleAnswerBr("<sub>2</sub>O<sub>5</sub>");
-                    if (this.table.elements[i].numberofgroup == 6)
+                    if (this.table.elements[i].group == 6 || this.table.elements[i].group == 16)
                         this.ResultText += this.Styles.styleAnswerBr("O<sub>3</sub>");
-                    if (this.table.elements[i].numberofgroup == 7)
+                    if (this.table.elements[i].group == 7 || this.table.elements[i].group == 17)
                         this.ResultText += this.Styles.styleAnswerBr("<sub>2</sub>O<sub>7</sub>");
-                    if (this.table.elements[i].numberofgroup == 8)
+                    if (this.table.elements[i].group == 8 || this.table.elements[i].group == 18)
                         this.ResultText += this.Styles.styleAnswerBr("O<sub>4</sub>");
-                    if (this.table.elements[i].numberofgroup == 8)
-                        this.ResultText += "Lotne związki: " + this.Styles.br();
                 }
                 else
                     this.ResultText += this.Styles.br();
     
-                if (this.table.elements[i].numberofgroup > 3)
+                if (this.table.elements[i].group == 4 || this.table.elements[i].group == 14)
                 {
-                    if (this.table.elements[i].numberofgroup == 4)
-                    {
-                        this.ResultText += "Lotne związki: " + this.Styles.styleAnswer(this.table.elements[i].symbol);
-                        this.ResultText += this.Styles.styleAnswerBr("H<sub>4</sub>");
-                    }
-                    if (this.table.elements[i].numberofgroup == 5)
-                    {
-                        this.ResultText += "Lotne związki: " + this.Styles.styleAnswer(this.table.elements[i].symbol);
-                        this.ResultText += this.Styles.styleAnswerBr("H<sub>3</sub>");
-                    }
-                    if (this.table.elements[i].numberofgroup == 6)
-                    {
-                        this.ResultText += "Lotne związki: " + this.Styles.styleAnswer("H<sub>2</sub>");
-                        this.ResultText += this.Styles.styleAnswerBr(this.table.elements[i].symbol);
-                    }
-                    if (this.table.elements[i].numberofgroup == 7)
-                    {
-                        this.ResultText += "Lotne związki: " + this.Styles.styleAnswer("H");
-                        this.ResultText += this.Styles.styleAnswerBr(this.table.elements[i].symbol);
-                    }
+                    this.ResultText += "Lotne związki: " + this.Styles.styleAnswer(this.table.elements[i].symbol);
+                    this.ResultText += this.Styles.styleAnswerBr("H<sub>4</sub>");
                 }
-                else
+                else if (this.table.elements[i].group == 5 || this.table.elements[i].group == 15)
+                {
+                    this.ResultText += "Lotne związki: " + this.Styles.styleAnswer(this.table.elements[i].symbol);
+                    this.ResultText += this.Styles.styleAnswerBr("H<sub>3</sub>");
+                }
+                else if (this.table.elements[i].group == 6 || this.table.elements[i].group == 16)
+                {
+                    this.ResultText += "Lotne związki: " + this.Styles.styleAnswer("H<sub>2</sub>");
+                    this.ResultText += this.Styles.styleAnswerBr(this.table.elements[i].symbol);
+                }
+                else if (this.table.elements[i].group == 7 || this.table.elements[i].group == 17)
+                {
+                    this.ResultText += "Lotne związki: " + this.Styles.styleAnswer("H");
+                    this.ResultText += this.Styles.styleAnswerBr(this.table.elements[i].symbol);
+                }
+                else {
                     this.ResultText += "Lotne związki: " + this.Styles.br();
+                }
     
                 let res = "";
                 res = " " + this.table.SPDF(this.table.elements[i].number);
                 this.ResultText += "Elektroniczna Konfiguracja:" + this.Styles.br() + this.Styles.styleRes(res) + this.Styles.br();
-                this.ResultText += "Wartościowość: ";
+                this.ResultText += "Stopień utlenienia:\n\n";
                 for (let j = 0; j < this.table.elements[i].Valetnost.length; j++) 
                     this.ResultText += this.Styles.styleAnswer(this.table.elements[i].Valetnost[j]) + " ";
                 this.ResultText += this.Styles.twoBr();
